@@ -95,7 +95,7 @@ frontend:
 git clone https://github.com/fapfaff/HA-Catppuccin-Theme.git
 ```
 
-3. Copy `src/catppuccin.yaml` in your existing (or create it) `themes/` folder.
+3. Copy `themes/catppuccin.yaml` in your existing (or create it) `themes/` folder.
 
 ```bash
 mv HA-Catppuccin-Theme/themes/catppuccin.yaml ~/config/themes/.
