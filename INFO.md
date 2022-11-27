@@ -65,7 +65,7 @@
 </details>
 
 ## Usage
-
+<!--
 ### With [HACS](https://hacs.xyz/)
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
@@ -80,7 +80,7 @@ frontend:
 4. Navigate to `Catppuccin` theme.
 5. Press `Install`.
 6. Go to services and trigger the `frontend.reload_themes` service.
-
+-->
 ### Manual
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
