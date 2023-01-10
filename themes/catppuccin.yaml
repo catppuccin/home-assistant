@@ -52,7 +52,7 @@ Catppuccin Latte:
   text-primary-color: var(--text)
   divider-color: var(--base)
   accent-color: var(--sky)
-  disabled-text-color: var(--surface0)
+  disabled-text-color: var(--overlay0)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -206,7 +206,7 @@ Catppuccin Frappe:
   text-primary-color: var(--text)
   divider-color: var(--base)
   accent-color: var(--sky)
-  disabled-text-color: var(--surface0)
+  disabled-text-color: var(--overlay0)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -359,7 +359,7 @@ Catppuccin Macchiato:
   text-primary-color: var(--text)
   divider-color: var(--base)
   accent-color: var(--sky)
-  disabled-text-color: var(--surface0)
+  disabled-text-color: var(--overlay0)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -514,7 +514,7 @@ Catppuccin Mocha:
   text-primary-color: var(--text)
   divider-color: var(--base)
   accent-color: var(--sky)
-  disabled-text-color: var(--surface0)
+  disabled-text-color: var(--overlay0)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -613,4 +613,3 @@ Catppuccin Mocha:
 
   state-on-color: var(--green)
   state-off-color: var(--red)
-
