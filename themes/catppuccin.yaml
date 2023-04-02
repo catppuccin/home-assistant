@@ -115,7 +115,7 @@ Catppuccin Latte:
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
-  mdc-checkbox-unchecked-color: var(--surface0)
+  mdc-checkbox-unchecked-color: var(--overlay0)
 
   # Dropdowns
   material-background-color: var(--primary-background-color)
@@ -270,7 +270,7 @@ Catppuccin Frappe:
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
-  mdc-checkbox-unchecked-color: var(--surface0)
+  mdc-checkbox-unchecked-color: var(--overlay0)
 
   # Dropdowns
   material-background-color: var(--primary-background-color)
@@ -424,7 +424,7 @@ Catppuccin Macchiato:
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
-  mdc-checkbox-unchecked-color: var(--surface0)
+  mdc-checkbox-unchecked-color: var(--overlay0)
 
   # Dropdowns
   material-background-color: var(--primary-background-color)
@@ -580,7 +580,7 @@ Catppuccin Mocha:
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
-  mdc-checkbox-unchecked-color: var(--surface0)
+  mdc-checkbox-unchecked-color: var(--overlay0)
 
   # Dropdowns
   material-background-color: var(--primary-background-color)
