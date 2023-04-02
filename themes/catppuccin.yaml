@@ -45,14 +45,15 @@ Catppuccin Latte:
 
   primary-background-color: var(--mantle)
   secondary-background-color: var(--mantle)
+  accent-color: var(--yellow)
 
   # Text
   primary-text-color: var(--text)
   secondary-text-color: var(--subtext1)
   text-primary-color: var(--text)
   divider-color: var(--base)
-  accent-color: var(--sky)
   disabled-text-color: var(--overlay0)
+  text-accent-color: var(--text)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -196,6 +197,7 @@ Catppuccin Frappe:
   # Main Interface colors
   primary-color: var(--blue)
   light-primary-color: var(--primary-color)
+  accent-color: var(--yellow)
 
   primary-background-color: var(--base)
   secondary-background-color: var(--base)
@@ -205,8 +207,8 @@ Catppuccin Frappe:
   secondary-text-color: var(--subtext1)
   text-primary-color: var(--text)
   divider-color: var(--base)
-  accent-color: var(--sky)
   disabled-text-color: var(--overlay0)
+  text-accent-color: var(--base)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -349,6 +351,7 @@ Catppuccin Macchiato:
   # Main Interface colors
   primary-color: var(--blue)
   light-primary-color: var(--primary-color)
+  accent-color: var(--yellow)
 
   primary-background-color: var(--base)
   secondary-background-color: var(--base)
@@ -358,8 +361,8 @@ Catppuccin Macchiato:
   secondary-text-color: var(--subtext1)
   text-primary-color: var(--text)
   divider-color: var(--base)
-  accent-color: var(--sky)
   disabled-text-color: var(--overlay0)
+  text-accent-color: var(--base)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -504,6 +507,7 @@ Catppuccin Mocha:
   # Main Interface colors
   primary-color: var(--blue)
   light-primary-color: var(--primary-color)
+  accent-color: var(--yellow)
 
   primary-background-color: var(--base)
   secondary-background-color: var(--base)
@@ -513,8 +517,8 @@ Catppuccin Mocha:
   secondary-text-color: var(--subtext1)
   text-primary-color: var(--text)
   divider-color: var(--base)
-  accent-color: var(--sky)
   disabled-text-color: var(--overlay0)
+  text-accent-color: var(--crust)
 
   # Sidebar
   sidebar-background-color: var(--crust)
