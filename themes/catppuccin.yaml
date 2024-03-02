@@ -140,6 +140,12 @@ Catppuccin Latte:
   input-label-ink-color: var(--secondary-text-color)
   input-idle-line-color: var(--primary-text-color)
   input-hover-line-color: var(--accent-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-disabled-fill-color: rgba(0, 0, 0, 0)
 
   # Toast
   paper-toast-background-color: var(--overlay0)
@@ -296,6 +302,12 @@ Catppuccin Frappe:
   input-label-ink-color: var(--secondary-text-color)
   input-idle-line-color: var(--primary-text-color)
   input-hover-line-color: var(--accent-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-disabled-fill-color: rgba(0, 0, 0, 0)
 
   # Toast
   paper-toast-background-color: var(--overlay0)
@@ -451,6 +463,12 @@ Catppuccin Macchiato:
   input-label-ink-color: var(--secondary-text-color)
   input-idle-line-color: var(--primary-text-color)
   input-hover-line-color: var(--accent-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-disabled-fill-color: rgba(0, 0, 0, 0)
 
   # Toast
   paper-toast-background-color: var(--overlay0)
@@ -608,6 +626,12 @@ Catppuccin Mocha:
   input-label-ink-color: var(--secondary-text-color)
   input-idle-line-color: var(--primary-text-color)
   input-hover-line-color: var(--accent-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-disabled-fill-color: rgba(0, 0, 0, 0)
 
   # Toast
   paper-toast-background-color: var(--overlay0)
