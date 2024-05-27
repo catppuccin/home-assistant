@@ -1,23 +1,5 @@
-####################### LATTE #######################
 Catppuccin Latte:
   # Colors
-  text: "#4c4f69"
-
-  subtext1: "#5c5f77"
-  subtext0: "#6c6f85"
-
-  overlay2: "#7c7f93"
-  overlay1: "#8c8fa1"
-  overlay0: "#9ca0b0"
-
-  surface2: "#acb0be"
-  surface1: "#bcc0cc"
-  surface0: "#ccd0da"
-
-  base: "#eff1f5"
-  mantle: "#e6e9ef"
-  crust: "#dce0e8"
-
   rosewater: "#dc8a78"
   flamingo: "#dd7878"
   pink: "#ea76cb"
@@ -32,6 +14,18 @@ Catppuccin Latte:
   sapphire: "#209fb5"
   blue: "#1e66f5"
   lavender: "#7287fd"
+  text: "#4c4f69"
+  subtext1: "#5c5f77"
+  subtext0: "#6c6f85"
+  overlay2: "#7c7f93"
+  overlay1: "#8c8fa1"
+  overlay0: "#9ca0b0"
+  surface2: "#acb0be"
+  surface1: "#bcc0cc"
+  surface0: "#ccd0da"
+  base: "#eff1f5"
+  mantle: "#e6e9ef"
+  crust: "#dce0e8"
 
   ###########################
 
@@ -42,10 +36,10 @@ Catppuccin Latte:
   # Main Interface colors
   primary-color: var(--blue)
   light-primary-color: var(--primary-color)
-
-  primary-background-color: var(--mantle)
-  secondary-background-color: var(--mantle)
   accent-color: var(--yellow)
+
+  primary-background-color: var(--base)
+  secondary-background-color: var(--base)
 
   # Text
   primary-text-color: var(--text)
@@ -53,7 +47,7 @@ Catppuccin Latte:
   text-primary-color: var(--text)
   divider-color: var(--base)
   disabled-text-color: var(--overlay0)
-  text-accent-color: var(--text)
+  text-accent-color: var(--base)
 
   # Sidebar
   sidebar-background-color: var(--crust)
@@ -91,7 +85,7 @@ Catppuccin Latte:
   label-badge-gray: var(--overlay0)
 
   # Cards
-  card-background-color: var(--base)
+  card-background-color: var(--surface0)
   ha-card-background: var(--card-background-color)
 
   ha-card-border-radius: "15px"
@@ -102,9 +96,10 @@ Catppuccin Latte:
 
   # Switches
   switch-checked-button-color: var(--green)
-  switch-checked-track-color: var(--surface0)
+  switch-checked-track-color: var(--surface2)
   switch-unchecked-button-color: rgb(--overlay0)
   switch-unchecked-track-color: rgb(--surface0)
+
   # Toggles
   paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
   paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
@@ -158,27 +153,8 @@ Catppuccin Latte:
 
   state-on-color: var(--green)
   state-off-color: var(--red)
-
-####################### FRAPPE ######################
-
 Catppuccin Frappe:
   # Colors
-  text: "#c6d0f5"
-  subtext1: "#b5bfe2"
-  subtext0: "#a5adce"
-
-  overlay2: "#949cbb"
-  overlay1: "#838ba7"
-  overlay0: "#737994"
-
-  surface2: "#626880"
-  surface1: "#51576d"
-  surface0: "#414559"
-
-  base: "#303446"
-  mantle: "#292c3c"
-  crust: "#232634"
-
   rosewater: "#f2d5cf"
   flamingo: "#eebebe"
   pink: "#f4b8e4"
@@ -193,6 +169,18 @@ Catppuccin Frappe:
   sapphire: "#85c1dc"
   blue: "#8caaee"
   lavender: "#babbf1"
+  text: "#c6d0f5"
+  subtext1: "#b5bfe2"
+  subtext0: "#a5adce"
+  overlay2: "#949cbb"
+  overlay1: "#838ba7"
+  overlay0: "#737994"
+  surface2: "#626880"
+  surface1: "#51576d"
+  surface0: "#414559"
+  base: "#303446"
+  mantle: "#292c3c"
+  crust: "#232634"
 
   ###########################
 
@@ -320,26 +308,8 @@ Catppuccin Frappe:
 
   state-on-color: var(--green)
   state-off-color: var(--red)
-
-####################### MACHIATO ####################
 Catppuccin Macchiato:
   # Colors
-  text: "#cad3f5"
-  subtext1: "#b8c0e0"
-  subtext0: "#a5adcb"
-
-  overlay2: "#939ab7"
-  overlay1: "#8087a2"
-  overlay0: "#6e738d"
-
-  surface2: "#5b6078"
-  surface1: "#494d64"
-  surface0: "#363a4f"
-
-  base: "#24273a"
-  mantle: "#1e2030"
-  crust: "#181926"
-
   rosewater: "#f4dbd6"
   flamingo: "#f0c6c6"
   pink: "#f5bde6"
@@ -354,6 +324,18 @@ Catppuccin Macchiato:
   sapphire: "#7dc4e4"
   blue: "#8aadf4"
   lavender: "#b7bdf8"
+  text: "#cad3f5"
+  subtext1: "#b8c0e0"
+  subtext0: "#a5adcb"
+  overlay2: "#939ab7"
+  overlay1: "#8087a2"
+  overlay0: "#6e738d"
+  surface2: "#5b6078"
+  surface1: "#494d64"
+  surface0: "#363a4f"
+  base: "#24273a"
+  mantle: "#1e2030"
+  crust: "#181926"
 
   ###########################
 
@@ -481,28 +463,8 @@ Catppuccin Macchiato:
 
   state-on-color: var(--green)
   state-off-color: var(--red)
-
-####################### MOCHA #######################
 Catppuccin Mocha:
   # Colors
-  text: "#cdd6f4"
-  text-dark: "#000000"
-
-  subtext1: "#bac2de"
-  subtext0: "#a6adc8"
-
-  overlay2: "#9399b2"
-  overlay1: "#7f849c"
-  overlay0: "#6c7086"
-
-  surface2: "#585b70"
-  surface1: "#45475a"
-  surface0: "#313244"
-
-  base: "#1e1e2e"
-  mantle: "#181825"
-  crust: "#11111b"
-
   rosewater: "#f5e0dc"
   flamingo: "#f2cdcd"
   pink: "#f5c2e7"
@@ -517,6 +479,18 @@ Catppuccin Mocha:
   sapphire: "#74c7ec"
   blue: "#89b4fa"
   lavender: "#b4befe"
+  text: "#cdd6f4"
+  subtext1: "#bac2de"
+  subtext0: "#a6adc8"
+  overlay2: "#9399b2"
+  overlay1: "#7f849c"
+  overlay0: "#6c7086"
+  surface2: "#585b70"
+  surface1: "#45475a"
+  surface0: "#313244"
+  base: "#1e1e2e"
+  mantle: "#181825"
+  crust: "#11111b"
 
   ###########################
 
@@ -538,7 +512,7 @@ Catppuccin Mocha:
   text-primary-color: var(--text)
   divider-color: var(--base)
   disabled-text-color: var(--overlay0)
-  text-accent-color: var(--crust)
+  text-accent-color: var(--base)
 
   # Sidebar
   sidebar-background-color: var(--crust)

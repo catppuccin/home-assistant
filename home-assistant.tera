@@ -1,0 +1,140 @@
+---
+whiskers:
+  version: "2.2.0"
+  filename: "themes/catppuccin.yaml"
+---
+
+{%- for _, flavor in flavors -%}
+Catppuccin {{ flavor.identifier | capitalize }}:
+  # Colors
+{%- for _, color in flavor.colors %}
+  {{ color.identifier }}: "#{{ color.hex }}"
+{%- endfor %}
+
+  ###########################
+
+  # Header
+  app-header-background-color: var(--mantle)
+  app-header-text-color: var(--text)
+
+  # Main Interface colors
+  primary-color: var(--blue)
+  light-primary-color: var(--primary-color)
+  accent-color: var(--yellow)
+
+  primary-background-color: var(--base)
+  secondary-background-color: var(--base)
+
+  # Text
+  primary-text-color: var(--text)
+  secondary-text-color: var(--subtext1)
+  text-primary-color: var(--text)
+  divider-color: var(--base)
+  disabled-text-color: var(--overlay0)
+  text-accent-color: var(--base)
+
+  # Sidebar
+  sidebar-background-color: var(--crust)
+  sidebar-selected-background-color: var(--primary-background-color)
+
+  sidebar-icon-color: var(--subtext0)
+  sidebar-text-color: var(--subtext0)
+  sidebar-selected-icon-color: var(--mauve)
+  sidebar-selected-text-color: var(--mauve)
+
+  # Buttons
+  paper-item-icon-color: var(--subtext0)
+  paper-item-icon-active-color: var(--primary-color)
+
+  # States and Badges
+  state-icon-color: var(--lavender)
+  state-icon-active-color: var(--primary-color)
+
+  state-icon-unavailable-color: var(--disabled-text-color)
+
+  # Sliders
+  paper-slider-knob-color: var(--blue)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-secondary-color: var(--blue)
+
+  # Labels
+  label-badge-background-color: var(--surface0)
+  label-badge-text-color: var(--text)
+  label-badge-red: var(--red)
+  label-badge-green: var(--green)
+  label-badge-blue: var(--blue)
+  label-badge-yellow: var(--yellow)
+  label-badge-gray: var(--overlay0)
+
+  # Cards
+  card-background-color: var(--surface0)
+  ha-card-background: var(--card-background-color)
+
+  ha-card-border-radius: "15px"
+  ha-card-box-shadow: none
+  paper-dialog-background-color: var(--overlay0)
+  paper-listbox-background-color: var(--overlay0)
+  paper-card-background-color: var(--card-background-color)
+
+  # Switches
+  switch-checked-button-color: var(--green)
+  switch-checked-track-color: var(--surface2)
+  switch-unchecked-button-color: rgb(--overlay0)
+  switch-unchecked-track-color: rgb(--surface0)
+
+  # Toggles
+  paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
+  paper-toggle-button-checked-bar-color: var(--switch-checked-track-color)
+  paper-toggle-button-unchecked-button-color: var(--switch-unchecked-button-color)
+  paper-toggle-button-unchecked-bar-color: var(--switch-unchecked-track-color)
+
+  # Table
+  table-row-background-color: var(--primary-background-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  data-table-background-color: var(--primary-background-color)
+  mdc-checkbox-unchecked-color: var(--overlay0)
+
+  # Dropdowns
+  material-background-color: var(--primary-background-color)
+  material-secondary-background-color: var(--primary-background-color)
+  mdc-theme-surface: var(--primary-background-color)
+
+  # Pre/Code
+  markdown-code-background-color: var(--surface0)
+
+  # Checkboxes
+  mdc-select-fill-color: var(--surface0)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--subtext1)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--accent-color)
+
+  # Input
+  input-fill-color: var(--secondary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--accent-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-disabled-fill-color: rgba(0, 0, 0, 0)
+
+  # Toast
+  paper-toast-background-color: var(--overlay0)
+
+  # Colors
+  error-color: var(--red)
+  warning-color: var(--yellow)
+  success-color: var(--green)
+  info-color: var(--blue)
+
+  state-on-color: var(--green)
+  state-off-color: var(--red)
+{% endfor -%}
