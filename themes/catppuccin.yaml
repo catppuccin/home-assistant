@@ -93,6 +93,7 @@ Catppuccin Latte:
   # Cards
   card-background-color: var(--base)
   ha-card-background: var(--card-background-color)
+  ha-card-border-width: 0px
 
   ha-card-border-radius: "15px"
   ha-card-box-shadow: none
@@ -254,6 +255,7 @@ Catppuccin Frappe:
   # Cards
   card-background-color: var(--surface0)
   ha-card-background: var(--card-background-color)
+  ha-card-border-width: 0px
 
   ha-card-border-radius: "15px"
   ha-card-box-shadow: none
@@ -415,6 +417,7 @@ Catppuccin Macchiato:
   # Cards
   card-background-color: var(--surface0)
   ha-card-background: var(--card-background-color)
+  ha-card-border-width: 0px
 
   ha-card-border-radius: "15px"
   ha-card-box-shadow: none
@@ -578,6 +581,7 @@ Catppuccin Mocha:
   # Cards
   card-background-color: var(--surface0)
   ha-card-background: var(--card-background-color)
+  ha-card-border-width: 0px
 
   ha-card-border-radius: "15px"
   ha-card-box-shadow: none
