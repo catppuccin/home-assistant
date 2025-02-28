@@ -101,7 +101,7 @@ git clone https://github.com/catppuccin/home-assistant.git
 mv home-assistant/themes/catppuccin.yaml ~/config/themes/.
 ```
 
-4. Go to your profile settings to pick a theme.
+4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 
 ## 💝 Thanks to
