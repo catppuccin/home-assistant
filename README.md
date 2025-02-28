@@ -79,6 +79,7 @@ frontend:
 4. Navigate to `Catppuccin` theme.
 5. Press `Install`.
 6. Go to services and trigger the `frontend.reload_themes` service.
+7. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 ### Manual
 1. Add the following code to your `configuration.yaml` file (reboot required).
@@ -99,6 +100,8 @@ git clone https://github.com/catppuccin/home-assistant.git
 ```bash
 mv home-assistant/themes/catppuccin.yaml ~/config/themes/.
 ```
+
+4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 
 ## 💝 Thanks to
