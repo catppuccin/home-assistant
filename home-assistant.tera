@@ -84,7 +84,7 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       # Switches
       switch-checked-button-color: var(--green)
       switch-checked-track-color: var(--surface2)
-      switch-unchecked-button-color: rgb(--overlay0)
+      switch-unchecked-button-color: var(--overlay0)
       switch-unchecked-track-color: rgb(--surface0)
 
       # Toggles
