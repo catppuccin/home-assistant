@@ -2,16 +2,15 @@ name: Validate
 
 on:
   push:
+    branches: [main]
   pull_request:
-  schedule:
-    - cron: "0 0 * * *"
+    branches: [main]
 
 jobs:
-  validate:
+  hacs:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v2"
-      - name: HACS validation
-        uses: "hacs/action@main"
+      - uses: "actions/checkout@v4"
+      - uses: "hacs/action@main"
         with:
           category: "theme"
