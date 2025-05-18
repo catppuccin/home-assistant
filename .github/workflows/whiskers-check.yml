@@ -3,13 +3,14 @@ name: whiskers
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: ["main"]
   pull_request:
-    branches: [main]
+    branches: ["main"]
 
 jobs:
-  run:
-    uses: catppuccin/actions/.github/workflows/whiskers-check.yml@v1
-    with:
-      args: home-assistant.tera
-    secrets: inherit
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: catppuccin/setup-whiskers@v2
+      - run: whiskers home-assistant.tera --check themes/catppuccin.yaml
