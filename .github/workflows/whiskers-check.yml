@@ -1,0 +1,16 @@
+name: whiskers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: catppuccin/setup-whiskers@v2
+      - run: whiskers home-assistant.tera --check themes/catppuccin.yaml
