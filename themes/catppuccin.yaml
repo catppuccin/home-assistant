@@ -101,7 +101,7 @@ Catppuccin Latte:
       switch-checked-button-color: var(--green)
       switch-checked-track-color: var(--surface2)
       switch-unchecked-button-color: var(--overlay0)
-      switch-unchecked-track-color: rgb(--surface0)
+      switch-unchecked-track-color: var(--surface2)
 
       # Toggles
       paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
@@ -259,7 +259,7 @@ Catppuccin Frappe:
       switch-checked-button-color: var(--green)
       switch-checked-track-color: var(--surface2)
       switch-unchecked-button-color: var(--overlay0)
-      switch-unchecked-track-color: rgb(--surface0)
+      switch-unchecked-track-color: var(--surface2)
 
       # Toggles
       paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
@@ -417,7 +417,7 @@ Catppuccin Macchiato:
       switch-checked-button-color: var(--green)
       switch-checked-track-color: var(--surface2)
       switch-unchecked-button-color: var(--overlay0)
-      switch-unchecked-track-color: rgb(--surface0)
+      switch-unchecked-track-color: var(--surface2)
 
       # Toggles
       paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
@@ -575,7 +575,7 @@ Catppuccin Mocha:
       switch-checked-button-color: var(--green)
       switch-checked-track-color: var(--surface2)
       switch-unchecked-button-color: var(--overlay0)
-      switch-unchecked-track-color: rgb(--surface0)
+      switch-unchecked-track-color: var(--surface2)
 
       # Toggles
       paper-toggle-button-checked-button-color: var(--switch-checked-button-color)
