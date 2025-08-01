@@ -78,7 +78,7 @@ frontend:
 3. Search for `Catppuccin`.
 4. Navigate to `Catppuccin` theme.
 5. Press `Install`.
-6. Go to services and trigger the `frontend.reload_themes` service.
+6. Go to Developer Tools, and next Actions. Then select and manually trigger the `frontend.reload_actions` action.
 7. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 ### Manual
