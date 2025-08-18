@@ -7,7 +7,7 @@ whiskers:
 {%- for _, flavor in flavors -%}
 Catppuccin {{ flavor.identifier | capitalize }}:
   modes:
-    {% if flavor.dark %}dark{% else %}light{% endif %}:
+    {% if flavor.dark %}dark{% else %}light{% endif %}: &{{ flavor.identifier }}
       # Colors
       {%- for _, color in flavor.colors %}
       {{ color.identifier }}: "#{{ color.hex }}"
@@ -140,4 +140,17 @@ Catppuccin {{ flavor.identifier | capitalize }}:
 
       state-on-color: var(--green)
       state-off-color: var(--red)
+{% endfor -%}
+
+{% for _, light_flavor in flavors -%}
+{%- if not light_flavor.dark -%}
+{%- for _, dark_flavor in flavors -%}
+{%- if dark_flavor.dark -%}
+Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}:
+  modes:
+    light: *{{ light_flavor.identifier }}
+    dark: *{{ dark_flavor.identifier }}
+{% endif -%}
+{% endfor -%}
+{% endif -%}
 {% endfor -%}
