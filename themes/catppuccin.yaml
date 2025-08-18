@@ -1,6 +1,6 @@
 Catppuccin Latte:
   modes:
-    light:
+    light: &latte
       # Colors
       rosewater: "#dc8a78"
       flamingo: "#dd7878"
@@ -158,7 +158,7 @@ Catppuccin Latte:
       state-off-color: var(--red)
 Catppuccin Frappe:
   modes:
-    dark:
+    dark: &frappe
       # Colors
       rosewater: "#f2d5cf"
       flamingo: "#eebebe"
@@ -316,7 +316,7 @@ Catppuccin Frappe:
       state-off-color: var(--red)
 Catppuccin Macchiato:
   modes:
-    dark:
+    dark: &macchiato
       # Colors
       rosewater: "#f4dbd6"
       flamingo: "#f0c6c6"
@@ -474,7 +474,7 @@ Catppuccin Macchiato:
       state-off-color: var(--red)
 Catppuccin Mocha:
   modes:
-    dark:
+    dark: &mocha
       # Colors
       rosewater: "#f5e0dc"
       flamingo: "#f2cdcd"
@@ -630,3 +630,15 @@ Catppuccin Mocha:
 
       state-on-color: var(--green)
       state-off-color: var(--red)
+Catppuccin Auto Latte Frappe:
+  modes:
+    light: *latte
+    dark: *frappe
+Catppuccin Auto Latte Macchiato:
+  modes:
+    light: *latte
+    dark: *macchiato
+Catppuccin Auto Latte Mocha:
+  modes:
+    light: *latte
+    dark: *mocha
