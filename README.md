@@ -12,56 +12,47 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Overview/Overview.webp"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/catwalk.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Profile.webp"/>
-
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/dashboard.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/editor-jinja2.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/editor-yaml.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/devtools.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/settings.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/profile.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Profile.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/dashboard.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/editor-jinja2.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/editor-yaml.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/devtools.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/settings.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/profile.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Profile.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/dashboard.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/editor-jinja2.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/editor-yaml.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/devtools.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/settings.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/profile.webp"/>
 </details>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Profile.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/dashboard.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/editor-jinja2.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/editor-yaml.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/devtools.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/settings.webp"/>
+<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/profile.webp"/>
 </details>
 
 ## Usage
