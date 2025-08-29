@@ -65,7 +65,9 @@
 </details>
 
 ## Usage
+
 ### With [HACS](https://hacs.xyz/)
+
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
 ```yaml
@@ -74,6 +76,7 @@ frontend:
   themes: !include_dir_merge_named themes
   ... # your configuration.
 ```
+
 2. Go to the Community Store.
 3. Search for `Catppuccin`.
 4. Navigate to `Catppuccin` theme.
@@ -82,6 +85,7 @@ frontend:
 7. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 ### Manual
+
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
 ```yaml
@@ -90,7 +94,9 @@ frontend:
   themes: !include_dir_merge_named themes
   ... # your configuration.
 ```
+
 2. Clone the repository
+
 ```bash
 git clone https://github.com/catppuccin/home-assistant.git
 ```
@@ -102,7 +108,6 @@ mv home-assistant/themes/catppuccin.yaml ~/config/themes/.
 ```
 
 4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
-
 
 ## 💝 Thanks to
 
