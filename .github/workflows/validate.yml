@@ -1,14 +1,24 @@
-name: whiskers
+name: Validate
 
 on:
-  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
-  check:
+  hacs:
+    name: HACS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: hacs/action@main
+        with:
+          category: theme
+
+  whiskers:
+    name: Whiskers
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
