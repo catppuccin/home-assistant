@@ -12,60 +12,53 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Overview/Overview.webp"/>
+	<img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Latte/Profile.webp"/>
-
+<img src="assets/latte/dashboard.webp"/>
+<img src="assets/latte/editor-jinja2.webp"/>
+<img src="assets/latte/editor-yaml.webp"/>
+<img src="assets/latte/devtools.webp"/>
+<img src="assets/latte/settings.webp"/>
+<img src="assets/latte/profile.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Frappe/Profile.webp"/>
+<img src="assets/frappe/dashboard.webp"/>
+<img src="assets/frappe/editor-jinja2.webp"/>
+<img src="assets/frappe/editor-yaml.webp"/>
+<img src="assets/frappe/devtools.webp"/>
+<img src="assets/frappe/settings.webp"/>
+<img src="assets/frappe/profile.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Macchiato/Profile.webp"/>
+<img src="assets/macchiato/dashboard.webp"/>
+<img src="assets/macchiato/editor-jinja2.webp"/>
+<img src="assets/macchiato/editor-yaml.webp"/>
+<img src="assets/macchiato/devtools.webp"/>
+<img src="assets/macchiato/settings.webp"/>
+<img src="assets/macchiato/profile.webp"/>
 </details>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Overview.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Map.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Logbook.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/History.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Code.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/Mocha/Profile.webp"/>
+<img src="assets/mocha/dashboard.webp"/>
+<img src="assets/mocha/editor-jinja2.webp"/>
+<img src="assets/mocha/editor-yaml.webp"/>
+<img src="assets/mocha/devtools.webp"/>
+<img src="assets/mocha/settings.webp"/>
+<img src="assets/mocha/profile.webp"/>
 </details>
 
 ## Usage
+
 ### With [HACS](https://hacs.xyz/)
+
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
 ```yaml
@@ -74,6 +67,7 @@ frontend:
   themes: !include_dir_merge_named themes
   ... # your configuration.
 ```
+
 2. Go to the Community Store.
 3. Search for `Catppuccin`.
 4. Navigate to `Catppuccin` theme.
@@ -82,6 +76,7 @@ frontend:
 7. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 ### Manual
+
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
 ```yaml
@@ -90,7 +85,9 @@ frontend:
   themes: !include_dir_merge_named themes
   ... # your configuration.
 ```
+
 2. Clone the repository
+
 ```bash
 git clone https://github.com/catppuccin/home-assistant.git
 ```
@@ -102,7 +99,6 @@ mv home-assistant/themes/catppuccin.yaml ~/config/themes/.
 ```
 
 4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
-
 
 ## 💝 Thanks to
 
