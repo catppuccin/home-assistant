@@ -38,17 +38,17 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       ha-color-primary-95: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.083333331) | css_rgb }}
 
       # Neutral
-      ha-color-neutral-05: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.05) | css_rgb }}
-      ha-color-neutral-10: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.1) | css_rgb }}
-      ha-color-neutral-20: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.2) | css_rgb }}
-      ha-color-neutral-30: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.3) | css_rgb }}
-      ha-color-neutral-40: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.4) | css_rgb }}
-      ha-color-neutral-50: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.5) | css_rgb }}
-      ha-color-neutral-60: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.6) | css_rgb }}
-      ha-color-neutral-70: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.7) | css_rgb }}
-      ha-color-neutral-80: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.8) | css_rgb }}
-      ha-color-neutral-90: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.9) | css_rgb }}
-      ha-color-neutral-95: {{ flavor.colors.text | mix(color=flavor.colors.base, amount=0.95) | css_rgb }}
+      ha-color-neutral-05: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.05) | css_rgb }}
+      ha-color-neutral-10: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.1) | css_rgb }}
+      ha-color-neutral-20: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.2) | css_rgb }}
+      ha-color-neutral-30: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.3) | css_rgb }}
+      ha-color-neutral-40: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.4) | css_rgb }}
+      ha-color-neutral-50: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.5) | css_rgb }}
+      ha-color-neutral-60: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.6) | css_rgb }}
+      ha-color-neutral-70: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.7) | css_rgb }}
+      ha-color-neutral-80: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.8) | css_rgb }}
+      ha-color-neutral-90: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.9) | css_rgb }}
+      ha-color-neutral-95: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.95) | css_rgb }}
 
       # Orange
       ha-color-orange-05: {{ flavor.colors.peach | mix(color=flavor.colors.text, amount=0.1) | css_rgb }}
