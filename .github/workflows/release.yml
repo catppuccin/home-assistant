@@ -23,6 +23,8 @@ jobs:
 
   upload-assets:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created }}
     steps:
