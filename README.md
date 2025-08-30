@@ -91,7 +91,7 @@ frontend:
 
 3. Move the downloaded file to the `themes` folder in your
    [HA configuration directory](https://www.home-assistant.io/docs/configuration/#to-find-the-configuration-directory). (E.g. `~/config/themes`)
-
+4. Run the `frontend.reload_themes` action or restart Home Assistant.
 4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
 ## 💝 Thanks to
