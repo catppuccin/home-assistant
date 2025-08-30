@@ -8,9 +8,9 @@ on:
 
 jobs:
   hacs:
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     steps:
-      - uses: "actions/checkout@v5"
-      - uses: "hacs/action@main"
+      - uses: actions/checkout@v5
+      - uses: hacs/action@main
         with:
-          category: "theme"
+          category: theme
