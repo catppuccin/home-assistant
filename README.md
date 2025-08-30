@@ -12,47 +12,47 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/catwalk.webp"/>
+	<img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/dashboard.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/editor-jinja2.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/editor-yaml.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/latte/profile.webp"/>
+<img src="assets/latte/dashboard.webp"/>
+<img src="assets/latte/editor-jinja2.webp"/>
+<img src="assets/latte/editor-yaml.webp"/>
+<img src="assets/latte/devtools.webp"/>
+<img src="assets/latte/settings.webp"/>
+<img src="assets/latte/profile.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/dashboard.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/editor-jinja2.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/editor-yaml.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/frappe/profile.webp"/>
+<img src="assets/frappe/dashboard.webp"/>
+<img src="assets/frappe/editor-jinja2.webp"/>
+<img src="assets/frappe/editor-yaml.webp"/>
+<img src="assets/frappe/devtools.webp"/>
+<img src="assets/frappe/settings.webp"/>
+<img src="assets/frappe/profile.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/dashboard.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/editor-jinja2.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/editor-yaml.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/macchiato/profile.webp"/>
+<img src="assets/macchiato/dashboard.webp"/>
+<img src="assets/macchiato/editor-jinja2.webp"/>
+<img src="assets/macchiato/editor-yaml.webp"/>
+<img src="assets/macchiato/devtools.webp"/>
+<img src="assets/macchiato/settings.webp"/>
+<img src="assets/macchiato/profile.webp"/>
 </details>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/dashboard.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/editor-jinja2.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/editor-yaml.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/devtools.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/settings.webp"/>
-<img src="https://raw.githubusercontent.com/catppuccin/home-assistant/main/assets/mocha/profile.webp"/>
+<img src="assets/mocha/dashboard.webp"/>
+<img src="assets/mocha/editor-jinja2.webp"/>
+<img src="assets/mocha/editor-yaml.webp"/>
+<img src="assets/mocha/devtools.webp"/>
+<img src="assets/mocha/settings.webp"/>
+<img src="assets/mocha/profile.webp"/>
 </details>
 
 ## Usage
