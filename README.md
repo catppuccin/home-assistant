@@ -86,17 +86,11 @@ frontend:
   ... # your configuration.
 ```
 
-2. Clone the repository
 
-```bash
-git clone https://github.com/catppuccin/home-assistant.git
-```
+2. Download the `catppuccin.yaml` file from the [latest GitHub release](https://github.com/catppuccin/home-assistant/releases/latest).
 
-3. Copy `themes/catppuccin.yaml` in your existing (or create it) `themes/` folder.
-
-```bash
-mv home-assistant/themes/catppuccin.yaml ~/config/themes/.
-```
+3. Move the downloaded file to `themes` directory in your
+   [HA configuration directory](https://www.home-assistant.io/docs/configuration/#to-find-the-configuration-directory). (E.g. `~/config/themes`)
 
 4. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
