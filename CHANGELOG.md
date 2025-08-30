@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/catppuccin/home-assistant/compare/v2.0.0...v2.0.1) (2025-08-30)
+
+
+### Bug Fixes
+
+* invert the `color-neutral` scale ([#41](https://github.com/catppuccin/home-assistant/issues/41)) ([aa2f466](https://github.com/catppuccin/home-assistant/commit/aa2f466edf0d66323a7d9df4d1226315dbeb2b67))
+
 ## [2.0.0](https://github.com/catppuccin/home-assistant/compare/v1.0.2...v2.0.0) (2025-08-30)
 
 
