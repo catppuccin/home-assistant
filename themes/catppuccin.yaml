@@ -333,8 +333,16 @@ Catppuccin Latte:
       # For label-badge
       label-badge-grey: var(--secondary-text-color)
 
-      # States icon
+      # States icons
       state-icon-color: var(--primary-color)
+      # Input Boolean
+      state-input_boolean-on-color: var(--primary-color)
+      state-input_boolean-off-color: var(--dark-grey-color)
+      state-input_boolean-inactive-color: var(--dark-grey-color)
+      state-input_boolean-active-color: var(--dark-grey-color)
+      # Light state icon
+      state-light-off-color: var(--dark-grey-color)
+      state-light-inactive-color: var(--dark-grey-color)
 
       # Energy
       energy-grid-consumption-color: var(--catppuccin-lavender)
@@ -782,8 +790,16 @@ Catppuccin Frappe:
       # For label-badge
       label-badge-grey: var(--secondary-text-color)
 
-      # States icon
+      # States icons
       state-icon-color: var(--primary-color)
+      # Input Boolean
+      state-input_boolean-on-color: var(--primary-color)
+      state-input_boolean-off-color: var(--dark-grey-color)
+      state-input_boolean-inactive-color: var(--dark-grey-color)
+      state-input_boolean-active-color: var(--dark-grey-color)
+      # Light state icon
+      state-light-off-color: var(--dark-grey-color)
+      state-light-inactive-color: var(--dark-grey-color)
 
       # Energy
       energy-grid-consumption-color: var(--catppuccin-lavender)
@@ -1231,8 +1247,16 @@ Catppuccin Macchiato:
       # For label-badge
       label-badge-grey: var(--secondary-text-color)
 
-      # States icon
+      # States icons
       state-icon-color: var(--primary-color)
+      # Input Boolean
+      state-input_boolean-on-color: var(--primary-color)
+      state-input_boolean-off-color: var(--dark-grey-color)
+      state-input_boolean-inactive-color: var(--dark-grey-color)
+      state-input_boolean-active-color: var(--dark-grey-color)
+      # Light state icon
+      state-light-off-color: var(--dark-grey-color)
+      state-light-inactive-color: var(--dark-grey-color)
 
       # Energy
       energy-grid-consumption-color: var(--catppuccin-lavender)
@@ -1680,8 +1704,16 @@ Catppuccin Mocha:
       # For label-badge
       label-badge-grey: var(--secondary-text-color)
 
-      # States icon
+      # States icons
       state-icon-color: var(--primary-color)
+      # Input Boolean
+      state-input_boolean-on-color: var(--primary-color)
+      state-input_boolean-off-color: var(--dark-grey-color)
+      state-input_boolean-inactive-color: var(--dark-grey-color)
+      state-input_boolean-active-color: var(--dark-grey-color)
+      # Light state icon
+      state-light-off-color: var(--dark-grey-color)
+      state-light-inactive-color: var(--dark-grey-color)
 
       # Energy
       energy-grid-consumption-color: var(--catppuccin-lavender)
