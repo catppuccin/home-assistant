@@ -1,9 +1,15 @@
 ---
 whiskers:
   version: "^2.5.1"
-  filename: "themes/catppuccin.yaml"
+  matrix:
+    - accent: ["default", "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender"]
+  filename: "themes/{% if accent == 'default' %}catppuccin.yaml{% else %}catppuccin-{{accent}}.yaml{% endif %}"
+graph_color_offsets: {"mauve": 0, "green": 1, "red": 2, "blue": 3, "pink": 4, "yellow": 5, "sky": 6, "maroon": 7, "lavender": 8, "peach": 9, "teal": 10, "rosewater": 11, "sapphire": 12, "flamingo": 13}
+graph_colors: ["mauve", "green", "red", "blue", "pink", "yellow", "sky", "maroon", "lavender", "peach", "teal", "rosewater", "sapphire", "flamingo"]
 ---
-
+{%- if accent == 'default' -%}
+  {%- set accent = 'mauve' -%}
+{%- endif -%}
 {%- for _, flavor in flavors -%}
 Catppuccin {{ flavor.identifier | capitalize }}:
   modes:
@@ -25,17 +31,17 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       # Primary
       # NOTE: This centers around `primary-40` rather than `primary-50` because
       # HA uses `-40` as the default brand color for some reason.
-      ha-color-primary-05: {{ flavor.colors.mauve | mix(color=flavor.colors.text, amount=0.125) | css_rgb }}
-      ha-color-primary-10: {{ flavor.colors.mauve | mix(color=flavor.colors.text, amount=0.25) | css_rgb }}
-      ha-color-primary-20: {{ flavor.colors.mauve | mix(color=flavor.colors.text, amount=0.5) | css_rgb }}
-      ha-color-primary-30: {{ flavor.colors.mauve | mix(color=flavor.colors.text, amount=0.75) | css_rgb }}
-      ha-color-primary-40: {{ flavor.colors.mauve | css_rgb }}
-      ha-color-primary-50: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.833333331) | css_rgb }}
-      ha-color-primary-60: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.666666671) | css_rgb }}
-      ha-color-primary-70: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.51) | css_rgb }}
-      ha-color-primary-80: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.333333331) | css_rgb }}
-      ha-color-primary-90: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.166666671) | css_rgb }}
-      ha-color-primary-95: {{ flavor.colors.mauve | mix(color=flavor.colors.base, amount=0.083333331) | css_rgb }}
+      ha-color-primary-05: {{ flavor.colors[accent] | mix(color=flavor.colors.text, amount=0.125) | css_rgb }}
+      ha-color-primary-10: {{ flavor.colors[accent] | mix(color=flavor.colors.text, amount=0.25) | css_rgb }}
+      ha-color-primary-20: {{ flavor.colors[accent] | mix(color=flavor.colors.text, amount=0.5) | css_rgb }}
+      ha-color-primary-30: {{ flavor.colors[accent] | mix(color=flavor.colors.text, amount=0.75) | css_rgb }}
+      ha-color-primary-40: {{ flavor.colors[accent] | css_rgb }}
+      ha-color-primary-50: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.833333331) | css_rgb }}
+      ha-color-primary-60: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.666666671) | css_rgb }}
+      ha-color-primary-70: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.51) | css_rgb }}
+      ha-color-primary-80: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.333333331) | css_rgb }}
+      ha-color-primary-90: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.166666671) | css_rgb }}
+      ha-color-primary-95: {{ flavor.colors[accent] | mix(color=flavor.colors.base, amount=0.083333331) | css_rgb }}
 
       # Neutral
       ha-color-neutral-05: {{ flavor.colors.base | mix(color=flavor.colors.text, amount=0.05) | css_rgb }}
@@ -264,8 +270,8 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       outline-hover-color: var(--catppuccin-surface2)
 
       # RGB
-      rgb-primary-color: var(--catppuccin-mauve-rgb)
-      rgb-accent-color: var(--catppuccin-mauve-rgb)
+      rgb-primary-color: var(--catppuccin-{{ accent }}-rgb)
+      rgb-accent-color: var(--catppuccin-{{ accent }}-rgb)
       rgb-primary-text-color: var(--catppuccin-text-rgb)
       rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
       rgb-text-primary-color: var(--catppuccin-text-rgb)
@@ -346,7 +352,7 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       input-dropdown-icon-color: var(--secondary-text-color)
 
       # State color
-      state-active-color: var(--catppuccin-mauve)
+      state-active-color: var(--catppuccin-{{ accent }})
 
       sidebar-background-color: var(--catppuccin-crust)
       switch-unchecked-color: var(--catppuccin-overlay0)
@@ -392,20 +398,20 @@ Catppuccin {{ flavor.identifier | capitalize }}:
       ##########
       # Graphs #
       ##########
-      graph-color-1: var(--catppuccin-mauve)
-      graph-color-2: var(--catppuccin-green)
-      graph-color-3: var(--catppuccin-red)
-      graph-color-4: var(--catppuccin-blue)
-      graph-color-5: var(--catppuccin-pink)
-      graph-color-6: var(--catppuccin-yellow)
-      graph-color-7: var(--catppuccin-sky)
-      graph-color-8: var(--catppuccin-maroon)
-      graph-color-9: var(--catppuccin-lavender)
-      graph-color-10: var(--catppuccin-peach)
-      graph-color-11: var(--catppuccin-teal)
-      graph-color-12: var(--catppuccin-rosewater)
-      graph-color-13: var(--catppuccin-sapphire)
-      graph-color-14: var(--catppuccin-flamingo)
+      graph-color-1: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 0) % 14) }})
+      graph-color-2: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 1) % 14) }})
+      graph-color-3: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 2) % 14) }})
+      graph-color-4: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 3) % 14) }})
+      graph-color-5: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 4) % 14) }})
+      graph-color-6: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 5) % 14) }})
+      graph-color-7: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 6) % 14) }})
+      graph-color-8: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 7) % 14) }})
+      graph-color-9: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 8) % 14) }})
+      graph-color-10: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 9) % 14) }})
+      graph-color-11: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 10) % 14) }})
+      graph-color-12: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 11) % 14) }})
+      graph-color-13: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 12) % 14) }})
+      graph-color-14: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 13) % 14) }})
 {% endfor -%}
 
 {% for _, light_flavor in flavors -%}
