@@ -415,9 +415,11 @@ graph-color-14: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[ac
 
 {%- for _, flavor in flavors -%}
 Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
+  {{ self::haTheme(flavor=flavor, accent=accent) | indent(prefix="  ") }}
+
+  # Inform Home Assistant that this is a single-mode theme.
   modes:
-    {% if flavor.dark %}dark{% else %}light{% endif %}: &{{ flavor.identifier }}
-      {{ self::haTheme(flavor=flavor, accent=accent) | indent(prefix="      ") }}
+    {% if flavor.dark %}dark{% else %}light{% endif %}: {}
 {% endfor -%}
 
 {% for _, light_flavor in flavors -%}
@@ -426,8 +428,10 @@ Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent
 {%- if dark_flavor.dark -%}
 Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
   modes:
-    light: *{{ light_flavor.identifier }}
-    dark: *{{ dark_flavor.identifier }}
+    light:
+      {{ self::haTheme(flavor=light_flavor, accent=accent) | indent(prefix="      ") }}
+    dark:
+      {{ self::haTheme(flavor=dark_flavor, accent=accent) | indent(prefix="      ") }}
 {% endif -%}
 {% endfor -%}
 {% endif -%}
