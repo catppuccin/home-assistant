@@ -26,6 +26,8 @@ body:
       options:
         - Automatic (HACS)
         - Manual
+    validations:
+      required: true
   - type: input
     attributes:
       label: Which theme are you using?
