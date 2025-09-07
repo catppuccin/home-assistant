@@ -29,8 +29,12 @@ jobs:
     if: ${{ needs.release-please.outputs.release_created }}
     steps:
       - uses: actions/checkout@v5
+      - uses: catppuccin/setup-whiskers@v2
+
+      - name: Generate themes
+        run: whiskers home-assistant.tera
 
       - name: Upload Theme Assets
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload ${{ needs.release-please.outputs.tag_name }} themes/* --clobber
+        run: gh release upload ${{ needs.release-please.outputs.tag_name }} themes/catppuccin-*.yaml --clobber
