@@ -8,10 +8,11 @@ graph_color_offsets: {"mauve": 0, "green": 1, "red": 2, "blue": 3, "pink": 4, "y
 graph_colors: ["mauve", "green", "red", "blue", "pink", "yellow", "sky", "maroon", "lavender", "peach", "teal", "rosewater", "sapphire", "flamingo"]
 ---
 {%- if accent == 'default' -%}
+  {%- set is_default = true -%}
   {%- set accent = 'mauve' -%}
 {%- endif -%}
 {%- for _, flavor in flavors -%}
-Catppuccin {{ flavor.identifier | capitalize }}:
+Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
   modes:
     {% if flavor.dark %}dark{% else %}light{% endif %}: &{{ flavor.identifier }}
       #####################
@@ -418,7 +419,7 @@ Catppuccin {{ flavor.identifier | capitalize }}:
 {%- if not light_flavor.dark -%}
 {%- for _, dark_flavor in flavors -%}
 {%- if dark_flavor.dark -%}
-Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}:
+Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
   modes:
     light: *{{ light_flavor.identifier }}
     dark: *{{ dark_flavor.identifier }}
