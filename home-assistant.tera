@@ -3,7 +3,7 @@ whiskers:
   version: "^2.5.1"
   matrix:
     - accent: ["default", "rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender"]
-  filename: "themes/{% if accent == 'default' %}catppuccin.yaml{% else %}catppuccin-{{accent}}.yaml{% endif %}"
+  filename: "themes/catppuccin{% if accent != 'default' %}-{{accent}}{% endif %}.yaml"
 graph_color_offsets: {"mauve": 0, "green": 1, "red": 2, "blue": 3, "pink": 4, "yellow": 5, "sky": 6, "maroon": 7, "lavender": 8, "peach": 9, "teal": 10, "rosewater": 11, "sapphire": 12, "flamingo": 13}
 graph_colors: ["mauve", "green", "red", "blue", "pink", "yellow", "sky", "maroon", "lavender", "peach", "teal", "rosewater", "sapphire", "flamingo"]
 ---
