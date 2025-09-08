@@ -1,0 +1,9 @@
+services:
+  home-assistant:
+    image: ghcr.io/home-assistant/home-assistant:2025.9.0
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../themes:/config/themes
+    ports:
+      - "8123:8123"
