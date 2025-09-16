@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/catppuccin/home-assistant/compare/v2.0.1...v2.1.0) (2025-09-16)
+
+
+### Features
+
+* allow manually installing different accent colors ([#47](https://github.com/catppuccin/home-assistant/issues/47)) ([d76d695](https://github.com/catppuccin/home-assistant/commit/d76d695fb5136e40b51e0cea14d6ce6b05a868ac))
+
 ## [2.0.1](https://github.com/catppuccin/home-assistant/compare/v2.0.0...v2.0.1) (2025-08-30)
 
 
