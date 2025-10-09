@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/catppuccin/home-assistant/compare/v2.0.1...v2.1.0) (2025-10-09)
+
+
+### Features
+
+* allow manually installing different accent colors ([#47](https://github.com/catppuccin/home-assistant/issues/47)) ([d76d695](https://github.com/catppuccin/home-assistant/commit/d76d695fb5136e40b51e0cea14d6ce6b05a868ac))
+
+
+### Bug Fixes
+
+* apply single-mode themes even when system mode is different ([#54](https://github.com/catppuccin/home-assistant/issues/54)) ([78f3a1d](https://github.com/catppuccin/home-assistant/commit/78f3a1d2511ea628c072bfa34d85a52a088e7b5a))
+
 ## [2.0.1](https://github.com/catppuccin/home-assistant/compare/v2.0.0...v2.0.1) (2025-08-30)
 
 

@@ -1,6 +1,1810 @@
 Catppuccin Latte:
+  #####################
+  # Catppuccin Colors #
+  #####################
+  catppuccin-rosewater: "#dc8a78"
+  catppuccin-rosewater-rgb: 220, 138, 120
+  catppuccin-flamingo: "#dd7878"
+  catppuccin-flamingo-rgb: 221, 120, 120
+  catppuccin-pink: "#ea76cb"
+  catppuccin-pink-rgb: 234, 118, 203
+  catppuccin-mauve: "#8839ef"
+  catppuccin-mauve-rgb: 136, 57, 239
+  catppuccin-red: "#d20f39"
+  catppuccin-red-rgb: 210, 15, 57
+  catppuccin-maroon: "#e64553"
+  catppuccin-maroon-rgb: 230, 69, 83
+  catppuccin-peach: "#fe640b"
+  catppuccin-peach-rgb: 254, 100, 11
+  catppuccin-yellow: "#df8e1d"
+  catppuccin-yellow-rgb: 223, 142, 29
+  catppuccin-green: "#40a02b"
+  catppuccin-green-rgb: 64, 160, 43
+  catppuccin-teal: "#179299"
+  catppuccin-teal-rgb: 23, 146, 153
+  catppuccin-sky: "#04a5e5"
+  catppuccin-sky-rgb: 4, 165, 229
+  catppuccin-sapphire: "#209fb5"
+  catppuccin-sapphire-rgb: 32, 159, 181
+  catppuccin-blue: "#1e66f5"
+  catppuccin-blue-rgb: 30, 102, 245
+  catppuccin-lavender: "#7287fd"
+  catppuccin-lavender-rgb: 114, 135, 253
+  catppuccin-text: "#4c4f69"
+  catppuccin-text-rgb: 76, 79, 105
+  catppuccin-subtext1: "#5c5f77"
+  catppuccin-subtext1-rgb: 92, 95, 119
+  catppuccin-subtext0: "#6c6f85"
+  catppuccin-subtext0-rgb: 108, 111, 133
+  catppuccin-overlay2: "#7c7f93"
+  catppuccin-overlay2-rgb: 124, 127, 147
+  catppuccin-overlay1: "#8c8fa1"
+  catppuccin-overlay1-rgb: 140, 143, 161
+  catppuccin-overlay0: "#9ca0b0"
+  catppuccin-overlay0-rgb: 156, 160, 176
+  catppuccin-surface2: "#acb0be"
+  catppuccin-surface2-rgb: 172, 176, 190
+  catppuccin-surface1: "#bcc0cc"
+  catppuccin-surface1-rgb: 188, 192, 204
+  catppuccin-surface0: "#ccd0da"
+  catppuccin-surface0-rgb: 204, 208, 218
+  catppuccin-base: "#eff1f5"
+  catppuccin-base-rgb: 239, 241, 245
+  catppuccin-mantle: "#e6e9ef"
+  catppuccin-mantle-rgb: 230, 233, 239
+  catppuccin-crust: "#dce0e8"
+  catppuccin-crust-rgb: 220, 224, 232
+
+  ################################
+  # Home Assistant color palette #
+  ################################
+  # List from the "core.globals.ts" file in home-assistant/frontend.
+  # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+  # Primary
+  # NOTE: This centers around `primary-40` rather than `primary-50` because
+  # HA uses `-40` as the default brand color for some reason.
+  ha-color-primary-05: rgb(84, 76, 122)
+  ha-color-primary-10: rgb(91, 73, 139)
+  ha-color-primary-20: rgb(106, 68, 172)
+  ha-color-primary-30: rgb(121, 63, 205)
+  ha-color-primary-40: rgb(136, 57, 239)
+  ha-color-primary-50: rgb(153, 88, 240)
+  ha-color-primary-60: rgb(170, 117, 241)
+  ha-color-primary-70: rgb(186, 147, 242)
+  ha-color-primary-80: rgb(205, 181, 243)
+  ha-color-primary-90: rgb(222, 210, 244)
+  ha-color-primary-95: rgb(231, 226, 245)
+
+  # Neutral
+  ha-color-neutral-05: rgb(84, 87, 112)
+  ha-color-neutral-10: rgb(92, 96, 119)
+  ha-color-neutral-20: rgb(109, 111, 133)
+  ha-color-neutral-30: rgb(125, 128, 147)
+  ha-color-neutral-40: rgb(142, 143, 161)
+  ha-color-neutral-50: rgb(158, 160, 175)
+  ha-color-neutral-60: rgb(173, 177, 189)
+  ha-color-neutral-70: rgb(191, 193, 203)
+  ha-color-neutral-80: rgb(206, 209, 217)
+  ha-color-neutral-90: rgb(223, 225, 231)
+  ha-color-neutral-95: rgb(231, 233, 238)
+
+  # Orange
+  ha-color-orange-05: rgb(94, 81, 95)
+  ha-color-orange-10: rgb(112, 83, 86)
+  ha-color-orange-20: rgb(148, 87, 67)
+  ha-color-orange-30: rgb(182, 92, 49)
+  ha-color-orange-40: rgb(218, 96, 30)
+  ha-color-orange-50: rgb(254, 100, 11)
+  ha-color-orange-60: rgb(251, 128, 58)
+  ha-color-orange-70: rgb(248, 156, 105)
+  ha-color-orange-80: rgb(245, 185, 151)
+  ha-color-orange-90: rgb(242, 213, 198)
+  ha-color-orange-95: rgb(241, 226, 221)
+
+  # Red
+  ha-color-red-05: rgb(89, 73, 100)
+  ha-color-red-10: rgb(103, 66, 95)
+  ha-color-red-20: rgb(130, 53, 86)
+  ha-color-red-30: rgb(156, 41, 76)
+  ha-color-red-40: rgb(183, 28, 67)
+  ha-color-red-50: rgb(210, 15, 57)
+  ha-color-red-60: rgb(216, 60, 95)
+  ha-color-red-70: rgb(222, 105, 132)
+  ha-color-red-80: rgb(227, 151, 170)
+  ha-color-red-90: rgb(233, 196, 207)
+  ha-color-red-95: rgb(236, 218, 226)
+
+  # Green
+  ha-color-green-05: rgb(75, 87, 98)
+  ha-color-green-10: rgb(74, 95, 93)
+  ha-color-green-20: rgb(72, 111, 80)
+  ha-color-green-30: rgb(68, 128, 68)
+  ha-color-green-40: rgb(66, 144, 55)
+  ha-color-green-50: rgb(64, 160, 43)
+  ha-color-green-60: rgb(99, 176, 83)
+  ha-color-green-70: rgb(134, 192, 124)
+  ha-color-green-80: rgb(169, 209, 164)
+  ha-color-green-90: rgb(204, 225, 205)
+  ha-color-green-95: rgb(222, 232, 224)
+
+  ######################
+  # HA Semantic Colors #
+  ######################
+  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+  ha-color-focus: var(--ha-color-orange-60)
+
+  # Text
+  ha-color-text-primary: var(--catppuccin-text)
+  ha-color-text-secondary: var(--catppuccin-subtext1)
+  ha-color-text-disabled: var(--catppuccin-overlay1)
+  ha-color-text-link: var(--catppuccin-blue)
+
+  # Border primary
+  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-normal: var(--ha-color-primary-70)
+  ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+  # Border neutral
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+  ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+  # Border danger
+  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-normal: var(--ha-color-red-70)
+  ha-color-border-danger-loud: var(--ha-color-red-40)
+
+  # Border warning
+  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-normal: var(--ha-color-orange-70)
+  ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+  # Border success
+  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-normal: var(--ha-color-green-70)
+  ha-color-border-success-loud: var(--ha-color-green-40)
+
+  # Fill primary quiet
+  ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+  ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+  ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+  # Fill primary normal
+  ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+  ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+  ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+  # Fill primary loud
+  ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+  ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+  ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+  # Fill neutral quiet
+  ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+  ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+  # Fill neutral normal
+  ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+  ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+  # Fill neutral loud
+  ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+  ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+  ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+  # Fill disabled quiet
+  ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled normal
+  ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled loud
+  ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+  # Fill danger quiet
+  ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+  ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+  ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+  # Fill danger normal
+  ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+  ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+  ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+  # Fill danger loud
+  ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+  ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+  ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+  # Fill warning quiet
+  ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+  ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+  ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+  # Fill warning normal
+  ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+  ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+  ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+  # Fill warning loud
+  ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+  ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+  ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+  # Fill success quiet
+  ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+  ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+  ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+  # Fill success normal
+  ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+  ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+  ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+  # Fill success loud
+  ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+  ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+  ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+  # On primary
+  ha-color-on-primary-quiet: var(--ha-color-primary-50)
+  ha-color-on-primary-normal: var(--ha-color-primary-40)
+  ha-color-on-primary-loud: var(--white-color)
+
+  # On neutral
+  ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+  ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+  ha-color-on-neutral-loud: var(--white-color)
+
+  # On disabled
+  ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+  ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+  ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+  # On danger
+  ha-color-on-danger-quiet: var(--ha-color-red-50)
+  ha-color-on-danger-normal: var(--ha-color-red-40)
+  ha-color-on-danger-loud: var(--white-color)
+
+  # On warning
+  ha-color-on-warning-quiet: var(--ha-color-orange-50)
+  ha-color-on-warning-normal: var(--ha-color-orange-40)
+  ha-color-on-warning-loud: var(--white-color)
+
+  # On success
+  ha-color-on-success-quiet: var(--ha-color-green-50)
+  ha-color-on-success-normal: var(--ha-color-green-40)
+  ha-color-on-success-loud: var(--white-color)
+
+  ###################
+  # HA Other Colors #
+  ###################
+  # List from the "color.globals.ts" file in home-assistant/frontend.
+
+  # Text
+  primary-text-color: var(--ha-color-text-primary)
+  secondary-text-color: var(--ha-color-text-secondary)
+  text-primary-color: var(--catppuccin-crust)
+  text-light-primary-color: var(--catppuccin-crust)
+  disabled-text-color: var(--catppuccin-overlay1)
+
+  # Main interface colors
+  # primary-color: var(--ha-color-primary-40)
+  dark-primary-color: var(--ha-color-primary-30)
+  darker-primary-color: var(--ha-color-primary-20)
+  light-primary-color: var(--ha-color-primary-50)
+  accent-color: var(--primary-color)
+  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  outline-color: var(--catppuccin-crust)
+  outline-hover-color: var(--catppuccin-surface2)
+
+  # RGB
+  rgb-primary-color: var(--catppuccin-mauve-rgb)
+  rgb-accent-color: var(--catppuccin-mauve-rgb)
+  rgb-primary-text-color: var(--catppuccin-text-rgb)
+  rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+  rgb-text-primary-color: var(--catppuccin-text-rgb)
+  rgb-card-background-color: var(--catppuccin-base-rgb)
+
+  rgb-warning-color: var(--catppuccin-yellow-rgb)
+  rgb-error-color: var(--catppuccin-red-rgb)
+  rgb-success-color: var(--catppuccin-green-rgb)
+  rgb-info-color: var(--catppuccin-blue-rgb)
+
+  scrollbar-thumb-color: var(--primary-color)
+
+  error-color: var(--catppuccin-red)
+  warning-color: var(--catppuccin-yellow)
+  success-color: var(--catppuccin-green)
+  info-color: var(--catppuccin-blue)
+
+  # Backgrounds
+  card-background-color: var(--catppuccin-base)
+  primary-background-color: var(--catppuccin-mantle)
+  secondary-background-color: var(--catppuccin-mantle)
+  clear-background-color: var(--card-background-color)
+
+  # For label-badge
+  label-badge-grey: var(--secondary-text-color)
+
+  # States icon
+  state-icon-color: var(--primary-color)
+
+  # Energy
+  energy-grid-consumption-color: var(--catppuccin-lavender)
+  energy-grid-return-color: var(--catppuccin-mauve)
+  energy-solar-color: var(--catppuccin-yellow)
+  energy-non-fossil-color: var(--catppuccin-green)
+  energy-battery-out-color: var(--catppuccin-teal)
+  energy-battery-in-color: var(--catppuccin-pink)
+  energy-gas-color: var(--catppuccin-red)
+  energy-water-color: var(--catppuccin-sky)
+
+  # Color
+  disabled-color: var(--catppuccin-overlay1)
+  red-color: var(--catppuccin-red)
+  pink-color: var(--catppuccin-pink)
+  purple-color: var(--catppuccin-mauve)
+  deep-purple-color: var(--catppuccin-mauve)
+  indigo-color: var(--catppuccin-lavender)
+  blue-color: var(--catppuccin-blue)
+  light-blue-color: var(--catppuccin-sky)
+  cyan-color: var(--catppuccin-teal)
+  teal-color: var(--catppuccin-teal)
+  green-color: var(--catppuccin-green)
+  light-green-color: var(--catppuccin-green)
+  lime-color: var(--catppuccin-green)
+  yellow-color: var(--catppuccin-yellow)
+  amber-color: var(--catppuccin-yellow)
+  orange-color: var(--catppuccin-peach)
+  deep-orange-color: var(--catppuccin-maroon)
+  brown-color: var(--catppuccin-flamingo)
+  light-grey-color: var(--catppuccin-surface0)
+  grey-color: var(--catppuccin-surface2)
+  dark-grey-color: var(--catppuccin-overlay1)
+  blue-grey-color: var(--dark-grey-color)
+  black-color: var(--catppuccin-text)
+  white-color: var(--catppuccin-crust)
+
+  # Input components
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--accent-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-fill-color: var(--primary-background-color)
+  input-disabled-fill-color: var(--catppuccin-surface1)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+
+  # State color
+  state-active-color: var(--catppuccin-mauve)
+
+  sidebar-background-color: var(--catppuccin-crust)
+  switch-unchecked-color: var(--catppuccin-overlay0)
+  switch-unchecked-button-color: var(--switch-unchecked-color)
+  switch-unchecked-track-color: var(--switch-unchecked-color)
+
+  app-header-text-color: var(--primary-text-color)
+  app-header-background-color: var(--catppuccin-crust)
+
+  # Codemirror
+  codemirror-keyword: var(--catppuccin-mauve)
+  codemirror-operator: var(--catppuccin-sky)
+  codemirror-variable: var(--catppuccin-blue) # Functions
+  codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+  codemirror-variable-3: var(--catppuccin-text) # Currently unused
+  codemirror-builtin: var(--catppuccin-red)
+  codemirror-atom: var(--catppuccin-red)
+  codemirror-number: var(--catppuccin-peach)
+  codemirror-def: var(--catppuccin-text)
+  codemirror-string: var(--catppuccin-green)
+  codemirror-string-2: var(--catppuccin-green) # Currently unused
+  codemirror-comment: var(--catppuccin-overlay2)
+  codemirror-tag: var(--catppuccin-blue) # Currently unused
+  codemirror-meta: var(--catppuccin-overlay2)
+  codemirror-attribute: var(--catppuccin-yellow)
+  codemirror-property: var(--catppuccin-blue)
+  codemirror-qualifier: var(--catppuccin-peach)
+  codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+  ################
+  # Other colors #
+  ################
+  # These colors are respected by Home Assistant (currently), but aren't
+  # defined directly in the main theme.
+  text-accent-color: var(--catppuccin-crust)
+  md-slider-inactive-track-color: var(--catppuccin-overlay0)
+  app-header-edit-background-color: var(--catppuccin-surface2)
+  app-header-edit-text-color: var(--primary-text-color)
+
+  mdc-ripple-color: '#aaaaaa'
+  mdc-linear-progress-buffer-color: '#f00'
+
+  ##########
+  # Graphs #
+  ##########
+  graph-color-1: var(--catppuccin-mauve)
+  graph-color-2: var(--catppuccin-green)
+  graph-color-3: var(--catppuccin-red)
+  graph-color-4: var(--catppuccin-blue)
+  graph-color-5: var(--catppuccin-pink)
+  graph-color-6: var(--catppuccin-yellow)
+  graph-color-7: var(--catppuccin-sky)
+  graph-color-8: var(--catppuccin-maroon)
+  graph-color-9: var(--catppuccin-lavender)
+  graph-color-10: var(--catppuccin-peach)
+  graph-color-11: var(--catppuccin-teal)
+  graph-color-12: var(--catppuccin-rosewater)
+  graph-color-13: var(--catppuccin-sapphire)
+  graph-color-14: var(--catppuccin-flamingo)
+
+  # Inform Home Assistant that this is a single-mode theme.
   modes:
-    light: &latte
+    light: {}
+Catppuccin Frappe:
+  #####################
+  # Catppuccin Colors #
+  #####################
+  catppuccin-rosewater: "#f2d5cf"
+  catppuccin-rosewater-rgb: 242, 213, 207
+  catppuccin-flamingo: "#eebebe"
+  catppuccin-flamingo-rgb: 238, 190, 190
+  catppuccin-pink: "#f4b8e4"
+  catppuccin-pink-rgb: 244, 184, 228
+  catppuccin-mauve: "#ca9ee6"
+  catppuccin-mauve-rgb: 202, 158, 230
+  catppuccin-red: "#e78284"
+  catppuccin-red-rgb: 231, 130, 132
+  catppuccin-maroon: "#ea999c"
+  catppuccin-maroon-rgb: 234, 153, 156
+  catppuccin-peach: "#ef9f76"
+  catppuccin-peach-rgb: 239, 159, 118
+  catppuccin-yellow: "#e5c890"
+  catppuccin-yellow-rgb: 229, 200, 144
+  catppuccin-green: "#a6d189"
+  catppuccin-green-rgb: 166, 209, 137
+  catppuccin-teal: "#81c8be"
+  catppuccin-teal-rgb: 129, 200, 190
+  catppuccin-sky: "#99d1db"
+  catppuccin-sky-rgb: 153, 209, 219
+  catppuccin-sapphire: "#85c1dc"
+  catppuccin-sapphire-rgb: 133, 193, 220
+  catppuccin-blue: "#8caaee"
+  catppuccin-blue-rgb: 140, 170, 238
+  catppuccin-lavender: "#babbf1"
+  catppuccin-lavender-rgb: 186, 187, 241
+  catppuccin-text: "#c6d0f5"
+  catppuccin-text-rgb: 198, 208, 245
+  catppuccin-subtext1: "#b5bfe2"
+  catppuccin-subtext1-rgb: 181, 191, 226
+  catppuccin-subtext0: "#a5adce"
+  catppuccin-subtext0-rgb: 165, 173, 206
+  catppuccin-overlay2: "#949cbb"
+  catppuccin-overlay2-rgb: 148, 156, 187
+  catppuccin-overlay1: "#838ba7"
+  catppuccin-overlay1-rgb: 131, 139, 167
+  catppuccin-overlay0: "#737994"
+  catppuccin-overlay0-rgb: 115, 121, 148
+  catppuccin-surface2: "#626880"
+  catppuccin-surface2-rgb: 98, 104, 128
+  catppuccin-surface1: "#51576d"
+  catppuccin-surface1-rgb: 81, 87, 109
+  catppuccin-surface0: "#414559"
+  catppuccin-surface0-rgb: 65, 69, 89
+  catppuccin-base: "#303446"
+  catppuccin-base-rgb: 48, 52, 70
+  catppuccin-mantle: "#292c3c"
+  catppuccin-mantle-rgb: 41, 44, 60
+  catppuccin-crust: "#232634"
+  catppuccin-crust-rgb: 35, 38, 52
+
+  ################################
+  # Home Assistant color palette #
+  ################################
+  # List from the "core.globals.ts" file in home-assistant/frontend.
+  # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+  # Primary
+  # NOTE: This centers around `primary-40` rather than `primary-50` because
+  # HA uses `-40` as the default brand color for some reason.
+  ha-color-primary-05: rgb(198, 201, 243)
+  ha-color-primary-10: rgb(199, 196, 242)
+  ha-color-primary-20: rgb(200, 183, 237)
+  ha-color-primary-30: rgb(201, 170, 233)
+  ha-color-primary-40: rgb(202, 158, 230)
+  ha-color-primary-50: rgb(176, 140, 203)
+  ha-color-primary-60: rgb(151, 123, 177)
+  ha-color-primary-70: rgb(127, 106, 151)
+  ha-color-primary-80: rgb(99, 87, 123)
+  ha-color-primary-90: rgb(74, 70, 97)
+  ha-color-primary-95: rgb(60, 60, 83)
+
+  # Neutral
+  ha-color-neutral-05: rgb(190, 200, 237)
+  ha-color-neutral-10: rgb(183, 192, 227)
+  ha-color-neutral-20: rgb(168, 176, 210)
+  ha-color-neutral-30: rgb(152, 161, 192)
+  ha-color-neutral-40: rgb(138, 146, 175)
+  ha-color-neutral-50: rgb(123, 130, 157)
+  ha-color-neutral-60: rgb(108, 114, 140)
+  ha-color-neutral-70: rgb(93, 99, 122)
+  ha-color-neutral-80: rgb(78, 84, 105)
+  ha-color-neutral-90: rgb(62, 67, 87)
+  ha-color-neutral-95: rgb(56, 60, 78)
+
+  # Orange
+  ha-color-orange-05: rgb(202, 203, 232)
+  ha-color-orange-10: rgb(206, 198, 220)
+  ha-color-orange-20: rgb(215, 189, 194)
+  ha-color-orange-30: rgb(222, 178, 169)
+  ha-color-orange-40: rgb(231, 169, 143)
+  ha-color-orange-50: rgb(239, 159, 118)
+  ha-color-orange-60: rgb(201, 137, 108)
+  ha-color-orange-70: rgb(162, 116, 99)
+  ha-color-orange-80: rgb(125, 95, 89)
+  ha-color-orange-90: rgb(86, 74, 80)
+  ha-color-orange-95: rgb(67, 63, 75)
+
+  # Red
+  ha-color-red-05: rgb(202, 200, 233)
+  ha-color-red-10: rgb(204, 192, 222)
+  ha-color-red-20: rgb(211, 177, 200)
+  ha-color-red-30: rgb(218, 161, 177)
+  ha-color-red-40: rgb(225, 146, 155)
+  ha-color-red-50: rgb(231, 130, 132)
+  ha-color-red-60: rgb(195, 114, 120)
+  ha-color-red-70: rgb(158, 99, 107)
+  ha-color-red-80: rgb(121, 83, 95)
+  ha-color-red-90: rgb(84, 68, 82)
+  ha-color-red-95: rgb(67, 60, 76)
+
+  # Green
+  ha-color-green-05: rgb(195, 208, 234)
+  ha-color-green-10: rgb(191, 208, 223)
+  ha-color-green-20: rgb(185, 209, 202)
+  ha-color-green-30: rgb(179, 208, 180)
+  ha-color-green-40: rgb(173, 209, 159)
+  ha-color-green-50: rgb(166, 209, 137)
+  ha-color-green-60: rgb(143, 177, 124)
+  ha-color-green-70: rgb(119, 146, 110)
+  ha-color-green-80: rgb(95, 115, 97)
+  ha-color-green-90: rgb(71, 84, 83)
+  ha-color-green-95: rgb(60, 68, 77)
+
+  ######################
+  # HA Semantic Colors #
+  ######################
+  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+  ha-color-focus: var(--ha-color-orange-60)
+
+  # Text
+  ha-color-text-primary: var(--catppuccin-text)
+  ha-color-text-secondary: var(--catppuccin-subtext1)
+  ha-color-text-disabled: var(--catppuccin-overlay1)
+  ha-color-text-link: var(--catppuccin-blue)
+
+  # Border primary
+  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-normal: var(--ha-color-primary-70)
+  ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+  # Border neutral
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+  ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+  # Border danger
+  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-normal: var(--ha-color-red-70)
+  ha-color-border-danger-loud: var(--ha-color-red-40)
+
+  # Border warning
+  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-normal: var(--ha-color-orange-70)
+  ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+  # Border success
+  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-normal: var(--ha-color-green-70)
+  ha-color-border-success-loud: var(--ha-color-green-40)
+
+  # Fill primary quiet
+  ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+  ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+  ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+  # Fill primary normal
+  ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+  ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+  ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+  # Fill primary loud
+  ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+  ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+  ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+  # Fill neutral quiet
+  ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+  ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+  # Fill neutral normal
+  ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+  ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+  # Fill neutral loud
+  ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+  ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+  ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+  # Fill disabled quiet
+  ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled normal
+  ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled loud
+  ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+  # Fill danger quiet
+  ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+  ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+  ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+  # Fill danger normal
+  ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+  ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+  ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+  # Fill danger loud
+  ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+  ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+  ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+  # Fill warning quiet
+  ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+  ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+  ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+  # Fill warning normal
+  ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+  ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+  ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+  # Fill warning loud
+  ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+  ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+  ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+  # Fill success quiet
+  ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+  ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+  ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+  # Fill success normal
+  ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+  ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+  ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+  # Fill success loud
+  ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+  ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+  ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+  # On primary
+  ha-color-on-primary-quiet: var(--ha-color-primary-50)
+  ha-color-on-primary-normal: var(--ha-color-primary-40)
+  ha-color-on-primary-loud: var(--white-color)
+
+  # On neutral
+  ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+  ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+  ha-color-on-neutral-loud: var(--white-color)
+
+  # On disabled
+  ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+  ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+  ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+  # On danger
+  ha-color-on-danger-quiet: var(--ha-color-red-50)
+  ha-color-on-danger-normal: var(--ha-color-red-40)
+  ha-color-on-danger-loud: var(--white-color)
+
+  # On warning
+  ha-color-on-warning-quiet: var(--ha-color-orange-50)
+  ha-color-on-warning-normal: var(--ha-color-orange-40)
+  ha-color-on-warning-loud: var(--white-color)
+
+  # On success
+  ha-color-on-success-quiet: var(--ha-color-green-50)
+  ha-color-on-success-normal: var(--ha-color-green-40)
+  ha-color-on-success-loud: var(--white-color)
+
+  ###################
+  # HA Other Colors #
+  ###################
+  # List from the "color.globals.ts" file in home-assistant/frontend.
+
+  # Text
+  primary-text-color: var(--ha-color-text-primary)
+  secondary-text-color: var(--ha-color-text-secondary)
+  text-primary-color: var(--catppuccin-crust)
+  text-light-primary-color: var(--catppuccin-crust)
+  disabled-text-color: var(--catppuccin-overlay1)
+
+  # Main interface colors
+  # primary-color: var(--ha-color-primary-40)
+  dark-primary-color: var(--ha-color-primary-30)
+  darker-primary-color: var(--ha-color-primary-20)
+  light-primary-color: var(--ha-color-primary-50)
+  accent-color: var(--primary-color)
+  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  outline-color: var(--catppuccin-crust)
+  outline-hover-color: var(--catppuccin-surface2)
+
+  # RGB
+  rgb-primary-color: var(--catppuccin-mauve-rgb)
+  rgb-accent-color: var(--catppuccin-mauve-rgb)
+  rgb-primary-text-color: var(--catppuccin-text-rgb)
+  rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+  rgb-text-primary-color: var(--catppuccin-text-rgb)
+  rgb-card-background-color: var(--catppuccin-base-rgb)
+
+  rgb-warning-color: var(--catppuccin-yellow-rgb)
+  rgb-error-color: var(--catppuccin-red-rgb)
+  rgb-success-color: var(--catppuccin-green-rgb)
+  rgb-info-color: var(--catppuccin-blue-rgb)
+
+  scrollbar-thumb-color: var(--primary-color)
+
+  error-color: var(--catppuccin-red)
+  warning-color: var(--catppuccin-yellow)
+  success-color: var(--catppuccin-green)
+  info-color: var(--catppuccin-blue)
+
+  # Backgrounds
+  card-background-color: var(--catppuccin-base)
+  primary-background-color: var(--catppuccin-mantle)
+  secondary-background-color: var(--catppuccin-mantle)
+  clear-background-color: var(--card-background-color)
+
+  # For label-badge
+  label-badge-grey: var(--secondary-text-color)
+
+  # States icon
+  state-icon-color: var(--primary-color)
+
+  # Energy
+  energy-grid-consumption-color: var(--catppuccin-lavender)
+  energy-grid-return-color: var(--catppuccin-mauve)
+  energy-solar-color: var(--catppuccin-yellow)
+  energy-non-fossil-color: var(--catppuccin-green)
+  energy-battery-out-color: var(--catppuccin-teal)
+  energy-battery-in-color: var(--catppuccin-pink)
+  energy-gas-color: var(--catppuccin-red)
+  energy-water-color: var(--catppuccin-sky)
+
+  # Color
+  disabled-color: var(--catppuccin-overlay1)
+  red-color: var(--catppuccin-red)
+  pink-color: var(--catppuccin-pink)
+  purple-color: var(--catppuccin-mauve)
+  deep-purple-color: var(--catppuccin-mauve)
+  indigo-color: var(--catppuccin-lavender)
+  blue-color: var(--catppuccin-blue)
+  light-blue-color: var(--catppuccin-sky)
+  cyan-color: var(--catppuccin-teal)
+  teal-color: var(--catppuccin-teal)
+  green-color: var(--catppuccin-green)
+  light-green-color: var(--catppuccin-green)
+  lime-color: var(--catppuccin-green)
+  yellow-color: var(--catppuccin-yellow)
+  amber-color: var(--catppuccin-yellow)
+  orange-color: var(--catppuccin-peach)
+  deep-orange-color: var(--catppuccin-maroon)
+  brown-color: var(--catppuccin-flamingo)
+  light-grey-color: var(--catppuccin-surface0)
+  grey-color: var(--catppuccin-surface2)
+  dark-grey-color: var(--catppuccin-overlay1)
+  blue-grey-color: var(--dark-grey-color)
+  black-color: var(--catppuccin-text)
+  white-color: var(--catppuccin-crust)
+
+  # Input components
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--accent-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-fill-color: var(--primary-background-color)
+  input-disabled-fill-color: var(--catppuccin-surface1)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+
+  # State color
+  state-active-color: var(--catppuccin-mauve)
+
+  sidebar-background-color: var(--catppuccin-crust)
+  switch-unchecked-color: var(--catppuccin-overlay0)
+  switch-unchecked-button-color: var(--switch-unchecked-color)
+  switch-unchecked-track-color: var(--switch-unchecked-color)
+
+  app-header-text-color: var(--primary-text-color)
+  app-header-background-color: var(--catppuccin-crust)
+
+  # Codemirror
+  codemirror-keyword: var(--catppuccin-mauve)
+  codemirror-operator: var(--catppuccin-sky)
+  codemirror-variable: var(--catppuccin-blue) # Functions
+  codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+  codemirror-variable-3: var(--catppuccin-text) # Currently unused
+  codemirror-builtin: var(--catppuccin-red)
+  codemirror-atom: var(--catppuccin-red)
+  codemirror-number: var(--catppuccin-peach)
+  codemirror-def: var(--catppuccin-text)
+  codemirror-string: var(--catppuccin-green)
+  codemirror-string-2: var(--catppuccin-green) # Currently unused
+  codemirror-comment: var(--catppuccin-overlay2)
+  codemirror-tag: var(--catppuccin-blue) # Currently unused
+  codemirror-meta: var(--catppuccin-overlay2)
+  codemirror-attribute: var(--catppuccin-yellow)
+  codemirror-property: var(--catppuccin-blue)
+  codemirror-qualifier: var(--catppuccin-peach)
+  codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+  ################
+  # Other colors #
+  ################
+  # These colors are respected by Home Assistant (currently), but aren't
+  # defined directly in the main theme.
+  text-accent-color: var(--catppuccin-crust)
+  md-slider-inactive-track-color: var(--catppuccin-overlay0)
+  app-header-edit-background-color: var(--catppuccin-surface2)
+  app-header-edit-text-color: var(--primary-text-color)
+
+  mdc-ripple-color: '#aaaaaa'
+  mdc-linear-progress-buffer-color: '#f00'
+
+  ##########
+  # Graphs #
+  ##########
+  graph-color-1: var(--catppuccin-mauve)
+  graph-color-2: var(--catppuccin-green)
+  graph-color-3: var(--catppuccin-red)
+  graph-color-4: var(--catppuccin-blue)
+  graph-color-5: var(--catppuccin-pink)
+  graph-color-6: var(--catppuccin-yellow)
+  graph-color-7: var(--catppuccin-sky)
+  graph-color-8: var(--catppuccin-maroon)
+  graph-color-9: var(--catppuccin-lavender)
+  graph-color-10: var(--catppuccin-peach)
+  graph-color-11: var(--catppuccin-teal)
+  graph-color-12: var(--catppuccin-rosewater)
+  graph-color-13: var(--catppuccin-sapphire)
+  graph-color-14: var(--catppuccin-flamingo)
+
+  # Inform Home Assistant that this is a single-mode theme.
+  modes:
+    dark: {}
+Catppuccin Macchiato:
+  #####################
+  # Catppuccin Colors #
+  #####################
+  catppuccin-rosewater: "#f4dbd6"
+  catppuccin-rosewater-rgb: 244, 219, 214
+  catppuccin-flamingo: "#f0c6c6"
+  catppuccin-flamingo-rgb: 240, 198, 198
+  catppuccin-pink: "#f5bde6"
+  catppuccin-pink-rgb: 245, 189, 230
+  catppuccin-mauve: "#c6a0f6"
+  catppuccin-mauve-rgb: 198, 160, 246
+  catppuccin-red: "#ed8796"
+  catppuccin-red-rgb: 237, 135, 150
+  catppuccin-maroon: "#ee99a0"
+  catppuccin-maroon-rgb: 238, 153, 160
+  catppuccin-peach: "#f5a97f"
+  catppuccin-peach-rgb: 245, 169, 127
+  catppuccin-yellow: "#eed49f"
+  catppuccin-yellow-rgb: 238, 212, 159
+  catppuccin-green: "#a6da95"
+  catppuccin-green-rgb: 166, 218, 149
+  catppuccin-teal: "#8bd5ca"
+  catppuccin-teal-rgb: 139, 213, 202
+  catppuccin-sky: "#91d7e3"
+  catppuccin-sky-rgb: 145, 215, 227
+  catppuccin-sapphire: "#7dc4e4"
+  catppuccin-sapphire-rgb: 125, 196, 228
+  catppuccin-blue: "#8aadf4"
+  catppuccin-blue-rgb: 138, 173, 244
+  catppuccin-lavender: "#b7bdf8"
+  catppuccin-lavender-rgb: 183, 189, 248
+  catppuccin-text: "#cad3f5"
+  catppuccin-text-rgb: 202, 211, 245
+  catppuccin-subtext1: "#b8c0e0"
+  catppuccin-subtext1-rgb: 184, 192, 224
+  catppuccin-subtext0: "#a5adcb"
+  catppuccin-subtext0-rgb: 165, 173, 203
+  catppuccin-overlay2: "#939ab7"
+  catppuccin-overlay2-rgb: 147, 154, 183
+  catppuccin-overlay1: "#8087a2"
+  catppuccin-overlay1-rgb: 128, 135, 162
+  catppuccin-overlay0: "#6e738d"
+  catppuccin-overlay0-rgb: 110, 115, 141
+  catppuccin-surface2: "#5b6078"
+  catppuccin-surface2-rgb: 91, 96, 120
+  catppuccin-surface1: "#494d64"
+  catppuccin-surface1-rgb: 73, 77, 100
+  catppuccin-surface0: "#363a4f"
+  catppuccin-surface0-rgb: 54, 58, 79
+  catppuccin-base: "#24273a"
+  catppuccin-base-rgb: 36, 39, 58
+  catppuccin-mantle: "#1e2030"
+  catppuccin-mantle-rgb: 30, 32, 48
+  catppuccin-crust: "#181926"
+  catppuccin-crust-rgb: 24, 25, 38
+
+  ################################
+  # Home Assistant color palette #
+  ################################
+  # List from the "core.globals.ts" file in home-assistant/frontend.
+  # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+  # Primary
+  # NOTE: This centers around `primary-40` rather than `primary-50` because
+  # HA uses `-40` as the default brand color for some reason.
+  ha-color-primary-05: rgb(202, 205, 245)
+  ha-color-primary-10: rgb(201, 198, 246)
+  ha-color-primary-20: rgb(200, 185, 245)
+  ha-color-primary-30: rgb(199, 173, 245)
+  ha-color-primary-40: rgb(198, 160, 246)
+  ha-color-primary-50: rgb(171, 140, 215)
+  ha-color-primary-60: rgb(145, 120, 184)
+  ha-color-primary-70: rgb(119, 101, 153)
+  ha-color-primary-80: rgb(89, 79, 120)
+  ha-color-primary-90: rgb(63, 59, 89)
+  ha-color-primary-95: rgb(49, 49, 72)
+
+  # Neutral
+  ha-color-neutral-05: rgb(194, 202, 236)
+  ha-color-neutral-10: rgb(185, 193, 226)
+  ha-color-neutral-20: rgb(169, 177, 208)
+  ha-color-neutral-30: rgb(152, 159, 189)
+  ha-color-neutral-40: rgb(135, 143, 170)
+  ha-color-neutral-50: rgb(119, 125, 151)
+  ha-color-neutral-60: rgb(103, 107, 133)
+  ha-color-neutral-70: rgb(85, 90, 114)
+  ha-color-neutral-80: rgb(69, 73, 95)
+  ha-color-neutral-90: rgb(52, 56, 76)
+  ha-color-neutral-95: rgb(44, 48, 67)
+
+  # Orange
+  ha-color-orange-05: rgb(206, 206, 233)
+  ha-color-orange-10: rgb(211, 203, 221)
+  ha-color-orange-20: rgb(219, 195, 198)
+  ha-color-orange-30: rgb(228, 185, 174)
+  ha-color-orange-40: rgb(236, 177, 151)
+  ha-color-orange-50: rgb(245, 169, 127)
+  ha-color-orange-60: rgb(203, 143, 114)
+  ha-color-orange-70: rgb(161, 117, 99)
+  ha-color-orange-80: rgb(120, 91, 86)
+  ha-color-orange-90: rgb(78, 65, 71)
+  ha-color-orange-95: rgb(57, 52, 65)
+
+  # Red
+  ha-color-red-05: rgb(205, 203, 235)
+  ha-color-red-10: rgb(209, 196, 226)
+  ha-color-red-20: rgb(216, 181, 207)
+  ha-color-red-30: rgb(223, 165, 188)
+  ha-color-red-40: rgb(230, 150, 169)
+  ha-color-red-50: rgb(237, 135, 150)
+  ha-color-red-60: rgb(197, 116, 132)
+  ha-color-red-70: rgb(156, 97, 113)
+  ha-color-red-80: rgb(117, 77, 95)
+  ha-color-red-90: rgb(76, 58, 76)
+  ha-color-red-95: rgb(56, 49, 67)
+
+  # Green
+  ha-color-green-05: rgb(198, 211, 235)
+  ha-color-green-10: rgb(195, 213, 226)
+  ha-color-green-20: rgb(187, 214, 207)
+  ha-color-green-30: rgb(181, 215, 187)
+  ha-color-green-40: rgb(173, 216, 168)
+  ha-color-green-50: rgb(166, 218, 149)
+  ha-color-green-60: rgb(140, 182, 131)
+  ha-color-green-70: rgb(114, 147, 112)
+  ha-color-green-80: rgb(88, 110, 95)
+  ha-color-green-90: rgb(62, 75, 76)
+  ha-color-green-95: rgb(49, 57, 67)
+
+  ######################
+  # HA Semantic Colors #
+  ######################
+  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+  ha-color-focus: var(--ha-color-orange-60)
+
+  # Text
+  ha-color-text-primary: var(--catppuccin-text)
+  ha-color-text-secondary: var(--catppuccin-subtext1)
+  ha-color-text-disabled: var(--catppuccin-overlay1)
+  ha-color-text-link: var(--catppuccin-blue)
+
+  # Border primary
+  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-normal: var(--ha-color-primary-70)
+  ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+  # Border neutral
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+  ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+  # Border danger
+  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-normal: var(--ha-color-red-70)
+  ha-color-border-danger-loud: var(--ha-color-red-40)
+
+  # Border warning
+  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-normal: var(--ha-color-orange-70)
+  ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+  # Border success
+  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-normal: var(--ha-color-green-70)
+  ha-color-border-success-loud: var(--ha-color-green-40)
+
+  # Fill primary quiet
+  ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+  ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+  ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+  # Fill primary normal
+  ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+  ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+  ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+  # Fill primary loud
+  ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+  ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+  ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+  # Fill neutral quiet
+  ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+  ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+  # Fill neutral normal
+  ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+  ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+  # Fill neutral loud
+  ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+  ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+  ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+  # Fill disabled quiet
+  ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled normal
+  ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled loud
+  ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+  # Fill danger quiet
+  ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+  ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+  ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+  # Fill danger normal
+  ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+  ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+  ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+  # Fill danger loud
+  ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+  ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+  ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+  # Fill warning quiet
+  ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+  ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+  ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+  # Fill warning normal
+  ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+  ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+  ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+  # Fill warning loud
+  ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+  ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+  ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+  # Fill success quiet
+  ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+  ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+  ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+  # Fill success normal
+  ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+  ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+  ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+  # Fill success loud
+  ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+  ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+  ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+  # On primary
+  ha-color-on-primary-quiet: var(--ha-color-primary-50)
+  ha-color-on-primary-normal: var(--ha-color-primary-40)
+  ha-color-on-primary-loud: var(--white-color)
+
+  # On neutral
+  ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+  ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+  ha-color-on-neutral-loud: var(--white-color)
+
+  # On disabled
+  ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+  ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+  ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+  # On danger
+  ha-color-on-danger-quiet: var(--ha-color-red-50)
+  ha-color-on-danger-normal: var(--ha-color-red-40)
+  ha-color-on-danger-loud: var(--white-color)
+
+  # On warning
+  ha-color-on-warning-quiet: var(--ha-color-orange-50)
+  ha-color-on-warning-normal: var(--ha-color-orange-40)
+  ha-color-on-warning-loud: var(--white-color)
+
+  # On success
+  ha-color-on-success-quiet: var(--ha-color-green-50)
+  ha-color-on-success-normal: var(--ha-color-green-40)
+  ha-color-on-success-loud: var(--white-color)
+
+  ###################
+  # HA Other Colors #
+  ###################
+  # List from the "color.globals.ts" file in home-assistant/frontend.
+
+  # Text
+  primary-text-color: var(--ha-color-text-primary)
+  secondary-text-color: var(--ha-color-text-secondary)
+  text-primary-color: var(--catppuccin-crust)
+  text-light-primary-color: var(--catppuccin-crust)
+  disabled-text-color: var(--catppuccin-overlay1)
+
+  # Main interface colors
+  # primary-color: var(--ha-color-primary-40)
+  dark-primary-color: var(--ha-color-primary-30)
+  darker-primary-color: var(--ha-color-primary-20)
+  light-primary-color: var(--ha-color-primary-50)
+  accent-color: var(--primary-color)
+  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  outline-color: var(--catppuccin-crust)
+  outline-hover-color: var(--catppuccin-surface2)
+
+  # RGB
+  rgb-primary-color: var(--catppuccin-mauve-rgb)
+  rgb-accent-color: var(--catppuccin-mauve-rgb)
+  rgb-primary-text-color: var(--catppuccin-text-rgb)
+  rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+  rgb-text-primary-color: var(--catppuccin-text-rgb)
+  rgb-card-background-color: var(--catppuccin-base-rgb)
+
+  rgb-warning-color: var(--catppuccin-yellow-rgb)
+  rgb-error-color: var(--catppuccin-red-rgb)
+  rgb-success-color: var(--catppuccin-green-rgb)
+  rgb-info-color: var(--catppuccin-blue-rgb)
+
+  scrollbar-thumb-color: var(--primary-color)
+
+  error-color: var(--catppuccin-red)
+  warning-color: var(--catppuccin-yellow)
+  success-color: var(--catppuccin-green)
+  info-color: var(--catppuccin-blue)
+
+  # Backgrounds
+  card-background-color: var(--catppuccin-base)
+  primary-background-color: var(--catppuccin-mantle)
+  secondary-background-color: var(--catppuccin-mantle)
+  clear-background-color: var(--card-background-color)
+
+  # For label-badge
+  label-badge-grey: var(--secondary-text-color)
+
+  # States icon
+  state-icon-color: var(--primary-color)
+
+  # Energy
+  energy-grid-consumption-color: var(--catppuccin-lavender)
+  energy-grid-return-color: var(--catppuccin-mauve)
+  energy-solar-color: var(--catppuccin-yellow)
+  energy-non-fossil-color: var(--catppuccin-green)
+  energy-battery-out-color: var(--catppuccin-teal)
+  energy-battery-in-color: var(--catppuccin-pink)
+  energy-gas-color: var(--catppuccin-red)
+  energy-water-color: var(--catppuccin-sky)
+
+  # Color
+  disabled-color: var(--catppuccin-overlay1)
+  red-color: var(--catppuccin-red)
+  pink-color: var(--catppuccin-pink)
+  purple-color: var(--catppuccin-mauve)
+  deep-purple-color: var(--catppuccin-mauve)
+  indigo-color: var(--catppuccin-lavender)
+  blue-color: var(--catppuccin-blue)
+  light-blue-color: var(--catppuccin-sky)
+  cyan-color: var(--catppuccin-teal)
+  teal-color: var(--catppuccin-teal)
+  green-color: var(--catppuccin-green)
+  light-green-color: var(--catppuccin-green)
+  lime-color: var(--catppuccin-green)
+  yellow-color: var(--catppuccin-yellow)
+  amber-color: var(--catppuccin-yellow)
+  orange-color: var(--catppuccin-peach)
+  deep-orange-color: var(--catppuccin-maroon)
+  brown-color: var(--catppuccin-flamingo)
+  light-grey-color: var(--catppuccin-surface0)
+  grey-color: var(--catppuccin-surface2)
+  dark-grey-color: var(--catppuccin-overlay1)
+  blue-grey-color: var(--dark-grey-color)
+  black-color: var(--catppuccin-text)
+  white-color: var(--catppuccin-crust)
+
+  # Input components
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--accent-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-fill-color: var(--primary-background-color)
+  input-disabled-fill-color: var(--catppuccin-surface1)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+
+  # State color
+  state-active-color: var(--catppuccin-mauve)
+
+  sidebar-background-color: var(--catppuccin-crust)
+  switch-unchecked-color: var(--catppuccin-overlay0)
+  switch-unchecked-button-color: var(--switch-unchecked-color)
+  switch-unchecked-track-color: var(--switch-unchecked-color)
+
+  app-header-text-color: var(--primary-text-color)
+  app-header-background-color: var(--catppuccin-crust)
+
+  # Codemirror
+  codemirror-keyword: var(--catppuccin-mauve)
+  codemirror-operator: var(--catppuccin-sky)
+  codemirror-variable: var(--catppuccin-blue) # Functions
+  codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+  codemirror-variable-3: var(--catppuccin-text) # Currently unused
+  codemirror-builtin: var(--catppuccin-red)
+  codemirror-atom: var(--catppuccin-red)
+  codemirror-number: var(--catppuccin-peach)
+  codemirror-def: var(--catppuccin-text)
+  codemirror-string: var(--catppuccin-green)
+  codemirror-string-2: var(--catppuccin-green) # Currently unused
+  codemirror-comment: var(--catppuccin-overlay2)
+  codemirror-tag: var(--catppuccin-blue) # Currently unused
+  codemirror-meta: var(--catppuccin-overlay2)
+  codemirror-attribute: var(--catppuccin-yellow)
+  codemirror-property: var(--catppuccin-blue)
+  codemirror-qualifier: var(--catppuccin-peach)
+  codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+  ################
+  # Other colors #
+  ################
+  # These colors are respected by Home Assistant (currently), but aren't
+  # defined directly in the main theme.
+  text-accent-color: var(--catppuccin-crust)
+  md-slider-inactive-track-color: var(--catppuccin-overlay0)
+  app-header-edit-background-color: var(--catppuccin-surface2)
+  app-header-edit-text-color: var(--primary-text-color)
+
+  mdc-ripple-color: '#aaaaaa'
+  mdc-linear-progress-buffer-color: '#f00'
+
+  ##########
+  # Graphs #
+  ##########
+  graph-color-1: var(--catppuccin-mauve)
+  graph-color-2: var(--catppuccin-green)
+  graph-color-3: var(--catppuccin-red)
+  graph-color-4: var(--catppuccin-blue)
+  graph-color-5: var(--catppuccin-pink)
+  graph-color-6: var(--catppuccin-yellow)
+  graph-color-7: var(--catppuccin-sky)
+  graph-color-8: var(--catppuccin-maroon)
+  graph-color-9: var(--catppuccin-lavender)
+  graph-color-10: var(--catppuccin-peach)
+  graph-color-11: var(--catppuccin-teal)
+  graph-color-12: var(--catppuccin-rosewater)
+  graph-color-13: var(--catppuccin-sapphire)
+  graph-color-14: var(--catppuccin-flamingo)
+
+  # Inform Home Assistant that this is a single-mode theme.
+  modes:
+    dark: {}
+Catppuccin Mocha:
+  #####################
+  # Catppuccin Colors #
+  #####################
+  catppuccin-rosewater: "#f5e0dc"
+  catppuccin-rosewater-rgb: 245, 224, 220
+  catppuccin-flamingo: "#f2cdcd"
+  catppuccin-flamingo-rgb: 242, 205, 205
+  catppuccin-pink: "#f5c2e7"
+  catppuccin-pink-rgb: 245, 194, 231
+  catppuccin-mauve: "#cba6f7"
+  catppuccin-mauve-rgb: 203, 166, 247
+  catppuccin-red: "#f38ba8"
+  catppuccin-red-rgb: 243, 139, 168
+  catppuccin-maroon: "#eba0ac"
+  catppuccin-maroon-rgb: 235, 160, 172
+  catppuccin-peach: "#fab387"
+  catppuccin-peach-rgb: 250, 179, 135
+  catppuccin-yellow: "#f9e2af"
+  catppuccin-yellow-rgb: 249, 226, 175
+  catppuccin-green: "#a6e3a1"
+  catppuccin-green-rgb: 166, 227, 161
+  catppuccin-teal: "#94e2d5"
+  catppuccin-teal-rgb: 148, 226, 213
+  catppuccin-sky: "#89dceb"
+  catppuccin-sky-rgb: 137, 220, 235
+  catppuccin-sapphire: "#74c7ec"
+  catppuccin-sapphire-rgb: 116, 199, 236
+  catppuccin-blue: "#89b4fa"
+  catppuccin-blue-rgb: 137, 180, 250
+  catppuccin-lavender: "#b4befe"
+  catppuccin-lavender-rgb: 180, 190, 254
+  catppuccin-text: "#cdd6f4"
+  catppuccin-text-rgb: 205, 214, 244
+  catppuccin-subtext1: "#bac2de"
+  catppuccin-subtext1-rgb: 186, 194, 222
+  catppuccin-subtext0: "#a6adc8"
+  catppuccin-subtext0-rgb: 166, 173, 200
+  catppuccin-overlay2: "#9399b2"
+  catppuccin-overlay2-rgb: 147, 153, 178
+  catppuccin-overlay1: "#7f849c"
+  catppuccin-overlay1-rgb: 127, 132, 156
+  catppuccin-overlay0: "#6c7086"
+  catppuccin-overlay0-rgb: 108, 112, 134
+  catppuccin-surface2: "#585b70"
+  catppuccin-surface2-rgb: 88, 91, 112
+  catppuccin-surface1: "#45475a"
+  catppuccin-surface1-rgb: 69, 71, 90
+  catppuccin-surface0: "#313244"
+  catppuccin-surface0-rgb: 49, 50, 68
+  catppuccin-base: "#1e1e2e"
+  catppuccin-base-rgb: 30, 30, 46
+  catppuccin-mantle: "#181825"
+  catppuccin-mantle-rgb: 24, 24, 37
+  catppuccin-crust: "#11111b"
+  catppuccin-crust-rgb: 17, 17, 27
+
+  ################################
+  # Home Assistant color palette #
+  ################################
+  # List from the "core.globals.ts" file in home-assistant/frontend.
+  # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+  # Primary
+  # NOTE: This centers around `primary-40` rather than `primary-50` because
+  # HA uses `-40` as the default brand color for some reason.
+  ha-color-primary-05: rgb(204, 207, 244)
+  ha-color-primary-10: rgb(205, 202, 245)
+  ha-color-primary-20: rgb(204, 190, 246)
+  ha-color-primary-30: rgb(203, 178, 246)
+  ha-color-primary-40: rgb(203, 166, 247)
+  ha-color-primary-50: rgb(174, 143, 213)
+  ha-color-primary-60: rgb(146, 121, 181)
+  ha-color-primary-70: rgb(118, 100, 149)
+  ha-color-primary-80: rgb(87, 75, 112)
+  ha-color-primary-90: rgb(59, 53, 80)
+  ha-color-primary-95: rgb(44, 41, 61)
+
+  # Neutral
+  ha-color-neutral-05: rgb(197, 205, 234)
+  ha-color-neutral-10: rgb(187, 195, 224)
+  ha-color-neutral-20: rgb(170, 177, 204)
+  ha-color-neutral-30: rgb(152, 158, 184)
+  ha-color-neutral-40: rgb(135, 140, 164)
+  ha-color-neutral-50: rgb(117, 122, 145)
+  ha-color-neutral-60: rgb(100, 104, 126)
+  ha-color-neutral-70: rgb(82, 85, 105)
+  ha-color-neutral-80: rgb(65, 67, 86)
+  ha-color-neutral-90: rgb(47, 48, 65)
+  ha-color-neutral-95: rgb(38, 39, 56)
+
+  # Orange
+  ha-color-orange-05: rgb(209, 210, 233)
+  ha-color-orange-10: rgb(214, 207, 222)
+  ha-color-orange-20: rgb(223, 200, 200)
+  ha-color-orange-30: rgb(232, 193, 179)
+  ha-color-orange-40: rgb(241, 186, 157)
+  ha-color-orange-50: rgb(250, 179, 135)
+  ha-color-orange-60: rgb(206, 149, 117)
+  ha-color-orange-70: rgb(162, 119, 99)
+  ha-color-orange-80: rgb(118, 90, 82)
+  ha-color-orange-90: rgb(74, 60, 64)
+  ha-color-orange-95: rgb(52, 45, 55)
+
+  # Red
+  ha-color-red-05: rgb(209, 206, 236)
+  ha-color-red-10: rgb(213, 199, 229)
+  ha-color-red-20: rgb(220, 184, 213)
+  ha-color-red-30: rgb(228, 169, 199)
+  ha-color-red-40: rgb(235, 154, 183)
+  ha-color-red-50: rgb(243, 139, 168)
+  ha-color-red-60: rgb(200, 117, 143)
+  ha-color-red-70: rgb(158, 95, 119)
+  ha-color-red-80: rgb(115, 74, 95)
+  ha-color-red-90: rgb(73, 52, 71)
+  ha-color-red-95: rgb(52, 41, 58)
+
+  # Green
+  ha-color-green-05: rgb(201, 215, 235)
+  ha-color-green-10: rgb(197, 216, 227)
+  ha-color-green-20: rgb(189, 219, 210)
+  ha-color-green-30: rgb(182, 222, 195)
+  ha-color-green-40: rgb(174, 225, 178)
+  ha-color-green-50: rgb(166, 227, 161)
+  ha-color-green-60: rgb(139, 188, 138)
+  ha-color-green-70: rgb(112, 148, 115)
+  ha-color-green-80: rgb(84, 109, 92)
+  ha-color-green-90: rgb(57, 69, 69)
+  ha-color-green-95: rgb(44, 50, 57)
+
+  ######################
+  # HA Semantic Colors #
+  ######################
+  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+  ha-color-focus: var(--ha-color-orange-60)
+
+  # Text
+  ha-color-text-primary: var(--catppuccin-text)
+  ha-color-text-secondary: var(--catppuccin-subtext1)
+  ha-color-text-disabled: var(--catppuccin-overlay1)
+  ha-color-text-link: var(--catppuccin-blue)
+
+  # Border primary
+  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-normal: var(--ha-color-primary-70)
+  ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+  # Border neutral
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+  ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+  # Border danger
+  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-normal: var(--ha-color-red-70)
+  ha-color-border-danger-loud: var(--ha-color-red-40)
+
+  # Border warning
+  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-normal: var(--ha-color-orange-70)
+  ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+  # Border success
+  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-normal: var(--ha-color-green-70)
+  ha-color-border-success-loud: var(--ha-color-green-40)
+
+  # Fill primary quiet
+  ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+  ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+  ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+  # Fill primary normal
+  ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+  ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+  ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+  # Fill primary loud
+  ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+  ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+  ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+  # Fill neutral quiet
+  ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+  ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+  # Fill neutral normal
+  ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+  ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+  ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+  # Fill neutral loud
+  ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+  ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+  ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+  # Fill disabled quiet
+  ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled normal
+  ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+  # Fill disabled loud
+  ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+  # Fill danger quiet
+  ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+  ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+  ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+  # Fill danger normal
+  ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+  ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+  ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+  # Fill danger loud
+  ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+  ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+  ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+  # Fill warning quiet
+  ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+  ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+  ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+  # Fill warning normal
+  ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+  ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+  ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+  # Fill warning loud
+  ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+  ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+  ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+  # Fill success quiet
+  ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+  ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+  ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+  # Fill success normal
+  ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+  ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+  ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+  # Fill success loud
+  ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+  ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+  ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+  # On primary
+  ha-color-on-primary-quiet: var(--ha-color-primary-50)
+  ha-color-on-primary-normal: var(--ha-color-primary-40)
+  ha-color-on-primary-loud: var(--white-color)
+
+  # On neutral
+  ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+  ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+  ha-color-on-neutral-loud: var(--white-color)
+
+  # On disabled
+  ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+  ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+  ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+  # On danger
+  ha-color-on-danger-quiet: var(--ha-color-red-50)
+  ha-color-on-danger-normal: var(--ha-color-red-40)
+  ha-color-on-danger-loud: var(--white-color)
+
+  # On warning
+  ha-color-on-warning-quiet: var(--ha-color-orange-50)
+  ha-color-on-warning-normal: var(--ha-color-orange-40)
+  ha-color-on-warning-loud: var(--white-color)
+
+  # On success
+  ha-color-on-success-quiet: var(--ha-color-green-50)
+  ha-color-on-success-normal: var(--ha-color-green-40)
+  ha-color-on-success-loud: var(--white-color)
+
+  ###################
+  # HA Other Colors #
+  ###################
+  # List from the "color.globals.ts" file in home-assistant/frontend.
+
+  # Text
+  primary-text-color: var(--ha-color-text-primary)
+  secondary-text-color: var(--ha-color-text-secondary)
+  text-primary-color: var(--catppuccin-crust)
+  text-light-primary-color: var(--catppuccin-crust)
+  disabled-text-color: var(--catppuccin-overlay1)
+
+  # Main interface colors
+  # primary-color: var(--ha-color-primary-40)
+  dark-primary-color: var(--ha-color-primary-30)
+  darker-primary-color: var(--ha-color-primary-20)
+  light-primary-color: var(--ha-color-primary-50)
+  accent-color: var(--primary-color)
+  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  outline-color: var(--catppuccin-crust)
+  outline-hover-color: var(--catppuccin-surface2)
+
+  # RGB
+  rgb-primary-color: var(--catppuccin-mauve-rgb)
+  rgb-accent-color: var(--catppuccin-mauve-rgb)
+  rgb-primary-text-color: var(--catppuccin-text-rgb)
+  rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+  rgb-text-primary-color: var(--catppuccin-text-rgb)
+  rgb-card-background-color: var(--catppuccin-base-rgb)
+
+  rgb-warning-color: var(--catppuccin-yellow-rgb)
+  rgb-error-color: var(--catppuccin-red-rgb)
+  rgb-success-color: var(--catppuccin-green-rgb)
+  rgb-info-color: var(--catppuccin-blue-rgb)
+
+  scrollbar-thumb-color: var(--primary-color)
+
+  error-color: var(--catppuccin-red)
+  warning-color: var(--catppuccin-yellow)
+  success-color: var(--catppuccin-green)
+  info-color: var(--catppuccin-blue)
+
+  # Backgrounds
+  card-background-color: var(--catppuccin-base)
+  primary-background-color: var(--catppuccin-mantle)
+  secondary-background-color: var(--catppuccin-mantle)
+  clear-background-color: var(--card-background-color)
+
+  # For label-badge
+  label-badge-grey: var(--secondary-text-color)
+
+  # States icon
+  state-icon-color: var(--primary-color)
+
+  # Energy
+  energy-grid-consumption-color: var(--catppuccin-lavender)
+  energy-grid-return-color: var(--catppuccin-mauve)
+  energy-solar-color: var(--catppuccin-yellow)
+  energy-non-fossil-color: var(--catppuccin-green)
+  energy-battery-out-color: var(--catppuccin-teal)
+  energy-battery-in-color: var(--catppuccin-pink)
+  energy-gas-color: var(--catppuccin-red)
+  energy-water-color: var(--catppuccin-sky)
+
+  # Color
+  disabled-color: var(--catppuccin-overlay1)
+  red-color: var(--catppuccin-red)
+  pink-color: var(--catppuccin-pink)
+  purple-color: var(--catppuccin-mauve)
+  deep-purple-color: var(--catppuccin-mauve)
+  indigo-color: var(--catppuccin-lavender)
+  blue-color: var(--catppuccin-blue)
+  light-blue-color: var(--catppuccin-sky)
+  cyan-color: var(--catppuccin-teal)
+  teal-color: var(--catppuccin-teal)
+  green-color: var(--catppuccin-green)
+  light-green-color: var(--catppuccin-green)
+  lime-color: var(--catppuccin-green)
+  yellow-color: var(--catppuccin-yellow)
+  amber-color: var(--catppuccin-yellow)
+  orange-color: var(--catppuccin-peach)
+  deep-orange-color: var(--catppuccin-maroon)
+  brown-color: var(--catppuccin-flamingo)
+  light-grey-color: var(--catppuccin-surface0)
+  grey-color: var(--catppuccin-surface2)
+  dark-grey-color: var(--catppuccin-overlay1)
+  blue-grey-color: var(--dark-grey-color)
+  black-color: var(--catppuccin-text)
+  white-color: var(--catppuccin-crust)
+
+  # Input components
+  input-idle-line-color: var(--primary-text-color)
+  input-hover-line-color: var(--accent-color)
+  input-disabled-line-color: var(--disabled-text-color)
+  input-outlined-idle-border-color: var(--disabled-text-color)
+  input-outlined-hover-border-color: var(--disabled-text-color)
+  input-outlined-disabled-border-color: var(--disabled-text-color)
+  input-fill-color: var(--primary-background-color)
+  input-disabled-fill-color: var(--catppuccin-surface1)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+
+  # State color
+  state-active-color: var(--catppuccin-mauve)
+
+  sidebar-background-color: var(--catppuccin-crust)
+  switch-unchecked-color: var(--catppuccin-overlay0)
+  switch-unchecked-button-color: var(--switch-unchecked-color)
+  switch-unchecked-track-color: var(--switch-unchecked-color)
+
+  app-header-text-color: var(--primary-text-color)
+  app-header-background-color: var(--catppuccin-crust)
+
+  # Codemirror
+  codemirror-keyword: var(--catppuccin-mauve)
+  codemirror-operator: var(--catppuccin-sky)
+  codemirror-variable: var(--catppuccin-blue) # Functions
+  codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+  codemirror-variable-3: var(--catppuccin-text) # Currently unused
+  codemirror-builtin: var(--catppuccin-red)
+  codemirror-atom: var(--catppuccin-red)
+  codemirror-number: var(--catppuccin-peach)
+  codemirror-def: var(--catppuccin-text)
+  codemirror-string: var(--catppuccin-green)
+  codemirror-string-2: var(--catppuccin-green) # Currently unused
+  codemirror-comment: var(--catppuccin-overlay2)
+  codemirror-tag: var(--catppuccin-blue) # Currently unused
+  codemirror-meta: var(--catppuccin-overlay2)
+  codemirror-attribute: var(--catppuccin-yellow)
+  codemirror-property: var(--catppuccin-blue)
+  codemirror-qualifier: var(--catppuccin-peach)
+  codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+  ################
+  # Other colors #
+  ################
+  # These colors are respected by Home Assistant (currently), but aren't
+  # defined directly in the main theme.
+  text-accent-color: var(--catppuccin-crust)
+  md-slider-inactive-track-color: var(--catppuccin-overlay0)
+  app-header-edit-background-color: var(--catppuccin-surface2)
+  app-header-edit-text-color: var(--primary-text-color)
+
+  mdc-ripple-color: '#aaaaaa'
+  mdc-linear-progress-buffer-color: '#f00'
+
+  ##########
+  # Graphs #
+  ##########
+  graph-color-1: var(--catppuccin-mauve)
+  graph-color-2: var(--catppuccin-green)
+  graph-color-3: var(--catppuccin-red)
+  graph-color-4: var(--catppuccin-blue)
+  graph-color-5: var(--catppuccin-pink)
+  graph-color-6: var(--catppuccin-yellow)
+  graph-color-7: var(--catppuccin-sky)
+  graph-color-8: var(--catppuccin-maroon)
+  graph-color-9: var(--catppuccin-lavender)
+  graph-color-10: var(--catppuccin-peach)
+  graph-color-11: var(--catppuccin-teal)
+  graph-color-12: var(--catppuccin-rosewater)
+  graph-color-13: var(--catppuccin-sapphire)
+  graph-color-14: var(--catppuccin-flamingo)
+
+  # Inform Home Assistant that this is a single-mode theme.
+  modes:
+    dark: {}
+Catppuccin Auto Latte Frappe:
+  modes:
+    light:
       #####################
       # Catppuccin Colors #
       #####################
@@ -455,9 +2259,7 @@ Catppuccin Latte:
       graph-color-12: var(--catppuccin-rosewater)
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
-Catppuccin Frappe:
-  modes:
-    dark: &frappe
+    dark:
       #####################
       # Catppuccin Colors #
       #####################
@@ -912,9 +2714,456 @@ Catppuccin Frappe:
       graph-color-12: var(--catppuccin-rosewater)
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
-Catppuccin Macchiato:
+Catppuccin Auto Latte Macchiato:
   modes:
-    dark: &macchiato
+    light:
+      #####################
+      # Catppuccin Colors #
+      #####################
+      catppuccin-rosewater: "#dc8a78"
+      catppuccin-rosewater-rgb: 220, 138, 120
+      catppuccin-flamingo: "#dd7878"
+      catppuccin-flamingo-rgb: 221, 120, 120
+      catppuccin-pink: "#ea76cb"
+      catppuccin-pink-rgb: 234, 118, 203
+      catppuccin-mauve: "#8839ef"
+      catppuccin-mauve-rgb: 136, 57, 239
+      catppuccin-red: "#d20f39"
+      catppuccin-red-rgb: 210, 15, 57
+      catppuccin-maroon: "#e64553"
+      catppuccin-maroon-rgb: 230, 69, 83
+      catppuccin-peach: "#fe640b"
+      catppuccin-peach-rgb: 254, 100, 11
+      catppuccin-yellow: "#df8e1d"
+      catppuccin-yellow-rgb: 223, 142, 29
+      catppuccin-green: "#40a02b"
+      catppuccin-green-rgb: 64, 160, 43
+      catppuccin-teal: "#179299"
+      catppuccin-teal-rgb: 23, 146, 153
+      catppuccin-sky: "#04a5e5"
+      catppuccin-sky-rgb: 4, 165, 229
+      catppuccin-sapphire: "#209fb5"
+      catppuccin-sapphire-rgb: 32, 159, 181
+      catppuccin-blue: "#1e66f5"
+      catppuccin-blue-rgb: 30, 102, 245
+      catppuccin-lavender: "#7287fd"
+      catppuccin-lavender-rgb: 114, 135, 253
+      catppuccin-text: "#4c4f69"
+      catppuccin-text-rgb: 76, 79, 105
+      catppuccin-subtext1: "#5c5f77"
+      catppuccin-subtext1-rgb: 92, 95, 119
+      catppuccin-subtext0: "#6c6f85"
+      catppuccin-subtext0-rgb: 108, 111, 133
+      catppuccin-overlay2: "#7c7f93"
+      catppuccin-overlay2-rgb: 124, 127, 147
+      catppuccin-overlay1: "#8c8fa1"
+      catppuccin-overlay1-rgb: 140, 143, 161
+      catppuccin-overlay0: "#9ca0b0"
+      catppuccin-overlay0-rgb: 156, 160, 176
+      catppuccin-surface2: "#acb0be"
+      catppuccin-surface2-rgb: 172, 176, 190
+      catppuccin-surface1: "#bcc0cc"
+      catppuccin-surface1-rgb: 188, 192, 204
+      catppuccin-surface0: "#ccd0da"
+      catppuccin-surface0-rgb: 204, 208, 218
+      catppuccin-base: "#eff1f5"
+      catppuccin-base-rgb: 239, 241, 245
+      catppuccin-mantle: "#e6e9ef"
+      catppuccin-mantle-rgb: 230, 233, 239
+      catppuccin-crust: "#dce0e8"
+      catppuccin-crust-rgb: 220, 224, 232
+
+      ################################
+      # Home Assistant color palette #
+      ################################
+      # List from the "core.globals.ts" file in home-assistant/frontend.
+      # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+      # Primary
+      # NOTE: This centers around `primary-40` rather than `primary-50` because
+      # HA uses `-40` as the default brand color for some reason.
+      ha-color-primary-05: rgb(84, 76, 122)
+      ha-color-primary-10: rgb(91, 73, 139)
+      ha-color-primary-20: rgb(106, 68, 172)
+      ha-color-primary-30: rgb(121, 63, 205)
+      ha-color-primary-40: rgb(136, 57, 239)
+      ha-color-primary-50: rgb(153, 88, 240)
+      ha-color-primary-60: rgb(170, 117, 241)
+      ha-color-primary-70: rgb(186, 147, 242)
+      ha-color-primary-80: rgb(205, 181, 243)
+      ha-color-primary-90: rgb(222, 210, 244)
+      ha-color-primary-95: rgb(231, 226, 245)
+
+      # Neutral
+      ha-color-neutral-05: rgb(84, 87, 112)
+      ha-color-neutral-10: rgb(92, 96, 119)
+      ha-color-neutral-20: rgb(109, 111, 133)
+      ha-color-neutral-30: rgb(125, 128, 147)
+      ha-color-neutral-40: rgb(142, 143, 161)
+      ha-color-neutral-50: rgb(158, 160, 175)
+      ha-color-neutral-60: rgb(173, 177, 189)
+      ha-color-neutral-70: rgb(191, 193, 203)
+      ha-color-neutral-80: rgb(206, 209, 217)
+      ha-color-neutral-90: rgb(223, 225, 231)
+      ha-color-neutral-95: rgb(231, 233, 238)
+
+      # Orange
+      ha-color-orange-05: rgb(94, 81, 95)
+      ha-color-orange-10: rgb(112, 83, 86)
+      ha-color-orange-20: rgb(148, 87, 67)
+      ha-color-orange-30: rgb(182, 92, 49)
+      ha-color-orange-40: rgb(218, 96, 30)
+      ha-color-orange-50: rgb(254, 100, 11)
+      ha-color-orange-60: rgb(251, 128, 58)
+      ha-color-orange-70: rgb(248, 156, 105)
+      ha-color-orange-80: rgb(245, 185, 151)
+      ha-color-orange-90: rgb(242, 213, 198)
+      ha-color-orange-95: rgb(241, 226, 221)
+
+      # Red
+      ha-color-red-05: rgb(89, 73, 100)
+      ha-color-red-10: rgb(103, 66, 95)
+      ha-color-red-20: rgb(130, 53, 86)
+      ha-color-red-30: rgb(156, 41, 76)
+      ha-color-red-40: rgb(183, 28, 67)
+      ha-color-red-50: rgb(210, 15, 57)
+      ha-color-red-60: rgb(216, 60, 95)
+      ha-color-red-70: rgb(222, 105, 132)
+      ha-color-red-80: rgb(227, 151, 170)
+      ha-color-red-90: rgb(233, 196, 207)
+      ha-color-red-95: rgb(236, 218, 226)
+
+      # Green
+      ha-color-green-05: rgb(75, 87, 98)
+      ha-color-green-10: rgb(74, 95, 93)
+      ha-color-green-20: rgb(72, 111, 80)
+      ha-color-green-30: rgb(68, 128, 68)
+      ha-color-green-40: rgb(66, 144, 55)
+      ha-color-green-50: rgb(64, 160, 43)
+      ha-color-green-60: rgb(99, 176, 83)
+      ha-color-green-70: rgb(134, 192, 124)
+      ha-color-green-80: rgb(169, 209, 164)
+      ha-color-green-90: rgb(204, 225, 205)
+      ha-color-green-95: rgb(222, 232, 224)
+
+      ######################
+      # HA Semantic Colors #
+      ######################
+      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+      ha-color-focus: var(--ha-color-orange-60)
+
+      # Text
+      ha-color-text-primary: var(--catppuccin-text)
+      ha-color-text-secondary: var(--catppuccin-subtext1)
+      ha-color-text-disabled: var(--catppuccin-overlay1)
+      ha-color-text-link: var(--catppuccin-blue)
+
+      # Border primary
+      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-normal: var(--ha-color-primary-70)
+      ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+      # Border neutral
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+      ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+      # Border danger
+      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-normal: var(--ha-color-red-70)
+      ha-color-border-danger-loud: var(--ha-color-red-40)
+
+      # Border warning
+      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-normal: var(--ha-color-orange-70)
+      ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+      # Border success
+      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-normal: var(--ha-color-green-70)
+      ha-color-border-success-loud: var(--ha-color-green-40)
+
+      # Fill primary quiet
+      ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+      ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+      ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+      # Fill primary normal
+      ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+      ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+      ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+      # Fill primary loud
+      ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+      ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+      ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+      # Fill neutral quiet
+      ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+      ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+      ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+      # Fill neutral normal
+      ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+      ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+      ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+      # Fill neutral loud
+      ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+      ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+      ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+      # Fill disabled quiet
+      ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+      # Fill disabled normal
+      ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+      # Fill disabled loud
+      ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+      # Fill danger quiet
+      ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+      ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+      ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+      # Fill danger normal
+      ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+      ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+      ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+      # Fill danger loud
+      ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+      ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+      ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+      # Fill warning quiet
+      ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+      ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+      ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+      # Fill warning normal
+      ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+      ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+      ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+      # Fill warning loud
+      ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+      ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+      ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+      # Fill success quiet
+      ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+      ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+      ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+      # Fill success normal
+      ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+      ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+      ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+      # Fill success loud
+      ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+      ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+      ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+      # On primary
+      ha-color-on-primary-quiet: var(--ha-color-primary-50)
+      ha-color-on-primary-normal: var(--ha-color-primary-40)
+      ha-color-on-primary-loud: var(--white-color)
+
+      # On neutral
+      ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+      ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+      ha-color-on-neutral-loud: var(--white-color)
+
+      # On disabled
+      ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+      ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+      ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+      # On danger
+      ha-color-on-danger-quiet: var(--ha-color-red-50)
+      ha-color-on-danger-normal: var(--ha-color-red-40)
+      ha-color-on-danger-loud: var(--white-color)
+
+      # On warning
+      ha-color-on-warning-quiet: var(--ha-color-orange-50)
+      ha-color-on-warning-normal: var(--ha-color-orange-40)
+      ha-color-on-warning-loud: var(--white-color)
+
+      # On success
+      ha-color-on-success-quiet: var(--ha-color-green-50)
+      ha-color-on-success-normal: var(--ha-color-green-40)
+      ha-color-on-success-loud: var(--white-color)
+
+      ###################
+      # HA Other Colors #
+      ###################
+      # List from the "color.globals.ts" file in home-assistant/frontend.
+
+      # Text
+      primary-text-color: var(--ha-color-text-primary)
+      secondary-text-color: var(--ha-color-text-secondary)
+      text-primary-color: var(--catppuccin-crust)
+      text-light-primary-color: var(--catppuccin-crust)
+      disabled-text-color: var(--catppuccin-overlay1)
+
+      # Main interface colors
+      # primary-color: var(--ha-color-primary-40)
+      dark-primary-color: var(--ha-color-primary-30)
+      darker-primary-color: var(--ha-color-primary-20)
+      light-primary-color: var(--ha-color-primary-50)
+      accent-color: var(--primary-color)
+      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      outline-color: var(--catppuccin-crust)
+      outline-hover-color: var(--catppuccin-surface2)
+
+      # RGB
+      rgb-primary-color: var(--catppuccin-mauve-rgb)
+      rgb-accent-color: var(--catppuccin-mauve-rgb)
+      rgb-primary-text-color: var(--catppuccin-text-rgb)
+      rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+      rgb-text-primary-color: var(--catppuccin-text-rgb)
+      rgb-card-background-color: var(--catppuccin-base-rgb)
+
+      rgb-warning-color: var(--catppuccin-yellow-rgb)
+      rgb-error-color: var(--catppuccin-red-rgb)
+      rgb-success-color: var(--catppuccin-green-rgb)
+      rgb-info-color: var(--catppuccin-blue-rgb)
+
+      scrollbar-thumb-color: var(--primary-color)
+
+      error-color: var(--catppuccin-red)
+      warning-color: var(--catppuccin-yellow)
+      success-color: var(--catppuccin-green)
+      info-color: var(--catppuccin-blue)
+
+      # Backgrounds
+      card-background-color: var(--catppuccin-base)
+      primary-background-color: var(--catppuccin-mantle)
+      secondary-background-color: var(--catppuccin-mantle)
+      clear-background-color: var(--card-background-color)
+
+      # For label-badge
+      label-badge-grey: var(--secondary-text-color)
+
+      # States icon
+      state-icon-color: var(--primary-color)
+
+      # Energy
+      energy-grid-consumption-color: var(--catppuccin-lavender)
+      energy-grid-return-color: var(--catppuccin-mauve)
+      energy-solar-color: var(--catppuccin-yellow)
+      energy-non-fossil-color: var(--catppuccin-green)
+      energy-battery-out-color: var(--catppuccin-teal)
+      energy-battery-in-color: var(--catppuccin-pink)
+      energy-gas-color: var(--catppuccin-red)
+      energy-water-color: var(--catppuccin-sky)
+
+      # Color
+      disabled-color: var(--catppuccin-overlay1)
+      red-color: var(--catppuccin-red)
+      pink-color: var(--catppuccin-pink)
+      purple-color: var(--catppuccin-mauve)
+      deep-purple-color: var(--catppuccin-mauve)
+      indigo-color: var(--catppuccin-lavender)
+      blue-color: var(--catppuccin-blue)
+      light-blue-color: var(--catppuccin-sky)
+      cyan-color: var(--catppuccin-teal)
+      teal-color: var(--catppuccin-teal)
+      green-color: var(--catppuccin-green)
+      light-green-color: var(--catppuccin-green)
+      lime-color: var(--catppuccin-green)
+      yellow-color: var(--catppuccin-yellow)
+      amber-color: var(--catppuccin-yellow)
+      orange-color: var(--catppuccin-peach)
+      deep-orange-color: var(--catppuccin-maroon)
+      brown-color: var(--catppuccin-flamingo)
+      light-grey-color: var(--catppuccin-surface0)
+      grey-color: var(--catppuccin-surface2)
+      dark-grey-color: var(--catppuccin-overlay1)
+      blue-grey-color: var(--dark-grey-color)
+      black-color: var(--catppuccin-text)
+      white-color: var(--catppuccin-crust)
+
+      # Input components
+      input-idle-line-color: var(--primary-text-color)
+      input-hover-line-color: var(--accent-color)
+      input-disabled-line-color: var(--disabled-text-color)
+      input-outlined-idle-border-color: var(--disabled-text-color)
+      input-outlined-hover-border-color: var(--disabled-text-color)
+      input-outlined-disabled-border-color: var(--disabled-text-color)
+      input-fill-color: var(--primary-background-color)
+      input-disabled-fill-color: var(--catppuccin-surface1)
+      input-ink-color: var(--primary-text-color)
+      input-label-ink-color: var(--secondary-text-color)
+      input-disabled-ink-color: var(--disabled-text-color)
+      input-dropdown-icon-color: var(--secondary-text-color)
+
+      # State color
+      state-active-color: var(--catppuccin-mauve)
+
+      sidebar-background-color: var(--catppuccin-crust)
+      switch-unchecked-color: var(--catppuccin-overlay0)
+      switch-unchecked-button-color: var(--switch-unchecked-color)
+      switch-unchecked-track-color: var(--switch-unchecked-color)
+
+      app-header-text-color: var(--primary-text-color)
+      app-header-background-color: var(--catppuccin-crust)
+
+      # Codemirror
+      codemirror-keyword: var(--catppuccin-mauve)
+      codemirror-operator: var(--catppuccin-sky)
+      codemirror-variable: var(--catppuccin-blue) # Functions
+      codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+      codemirror-variable-3: var(--catppuccin-text) # Currently unused
+      codemirror-builtin: var(--catppuccin-red)
+      codemirror-atom: var(--catppuccin-red)
+      codemirror-number: var(--catppuccin-peach)
+      codemirror-def: var(--catppuccin-text)
+      codemirror-string: var(--catppuccin-green)
+      codemirror-string-2: var(--catppuccin-green) # Currently unused
+      codemirror-comment: var(--catppuccin-overlay2)
+      codemirror-tag: var(--catppuccin-blue) # Currently unused
+      codemirror-meta: var(--catppuccin-overlay2)
+      codemirror-attribute: var(--catppuccin-yellow)
+      codemirror-property: var(--catppuccin-blue)
+      codemirror-qualifier: var(--catppuccin-peach)
+      codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+      ################
+      # Other colors #
+      ################
+      # These colors are respected by Home Assistant (currently), but aren't
+      # defined directly in the main theme.
+      text-accent-color: var(--catppuccin-crust)
+      md-slider-inactive-track-color: var(--catppuccin-overlay0)
+      app-header-edit-background-color: var(--catppuccin-surface2)
+      app-header-edit-text-color: var(--primary-text-color)
+
+      mdc-ripple-color: '#aaaaaa'
+      mdc-linear-progress-buffer-color: '#f00'
+
+      ##########
+      # Graphs #
+      ##########
+      graph-color-1: var(--catppuccin-mauve)
+      graph-color-2: var(--catppuccin-green)
+      graph-color-3: var(--catppuccin-red)
+      graph-color-4: var(--catppuccin-blue)
+      graph-color-5: var(--catppuccin-pink)
+      graph-color-6: var(--catppuccin-yellow)
+      graph-color-7: var(--catppuccin-sky)
+      graph-color-8: var(--catppuccin-maroon)
+      graph-color-9: var(--catppuccin-lavender)
+      graph-color-10: var(--catppuccin-peach)
+      graph-color-11: var(--catppuccin-teal)
+      graph-color-12: var(--catppuccin-rosewater)
+      graph-color-13: var(--catppuccin-sapphire)
+      graph-color-14: var(--catppuccin-flamingo)
+    dark:
       #####################
       # Catppuccin Colors #
       #####################
@@ -1369,9 +3618,456 @@ Catppuccin Macchiato:
       graph-color-12: var(--catppuccin-rosewater)
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
-Catppuccin Mocha:
+Catppuccin Auto Latte Mocha:
   modes:
-    dark: &mocha
+    light:
+      #####################
+      # Catppuccin Colors #
+      #####################
+      catppuccin-rosewater: "#dc8a78"
+      catppuccin-rosewater-rgb: 220, 138, 120
+      catppuccin-flamingo: "#dd7878"
+      catppuccin-flamingo-rgb: 221, 120, 120
+      catppuccin-pink: "#ea76cb"
+      catppuccin-pink-rgb: 234, 118, 203
+      catppuccin-mauve: "#8839ef"
+      catppuccin-mauve-rgb: 136, 57, 239
+      catppuccin-red: "#d20f39"
+      catppuccin-red-rgb: 210, 15, 57
+      catppuccin-maroon: "#e64553"
+      catppuccin-maroon-rgb: 230, 69, 83
+      catppuccin-peach: "#fe640b"
+      catppuccin-peach-rgb: 254, 100, 11
+      catppuccin-yellow: "#df8e1d"
+      catppuccin-yellow-rgb: 223, 142, 29
+      catppuccin-green: "#40a02b"
+      catppuccin-green-rgb: 64, 160, 43
+      catppuccin-teal: "#179299"
+      catppuccin-teal-rgb: 23, 146, 153
+      catppuccin-sky: "#04a5e5"
+      catppuccin-sky-rgb: 4, 165, 229
+      catppuccin-sapphire: "#209fb5"
+      catppuccin-sapphire-rgb: 32, 159, 181
+      catppuccin-blue: "#1e66f5"
+      catppuccin-blue-rgb: 30, 102, 245
+      catppuccin-lavender: "#7287fd"
+      catppuccin-lavender-rgb: 114, 135, 253
+      catppuccin-text: "#4c4f69"
+      catppuccin-text-rgb: 76, 79, 105
+      catppuccin-subtext1: "#5c5f77"
+      catppuccin-subtext1-rgb: 92, 95, 119
+      catppuccin-subtext0: "#6c6f85"
+      catppuccin-subtext0-rgb: 108, 111, 133
+      catppuccin-overlay2: "#7c7f93"
+      catppuccin-overlay2-rgb: 124, 127, 147
+      catppuccin-overlay1: "#8c8fa1"
+      catppuccin-overlay1-rgb: 140, 143, 161
+      catppuccin-overlay0: "#9ca0b0"
+      catppuccin-overlay0-rgb: 156, 160, 176
+      catppuccin-surface2: "#acb0be"
+      catppuccin-surface2-rgb: 172, 176, 190
+      catppuccin-surface1: "#bcc0cc"
+      catppuccin-surface1-rgb: 188, 192, 204
+      catppuccin-surface0: "#ccd0da"
+      catppuccin-surface0-rgb: 204, 208, 218
+      catppuccin-base: "#eff1f5"
+      catppuccin-base-rgb: 239, 241, 245
+      catppuccin-mantle: "#e6e9ef"
+      catppuccin-mantle-rgb: 230, 233, 239
+      catppuccin-crust: "#dce0e8"
+      catppuccin-crust-rgb: 220, 224, 232
+
+      ################################
+      # Home Assistant color palette #
+      ################################
+      # List from the "core.globals.ts" file in home-assistant/frontend.
+      # TODO: Update these once Whiskers has variant (tint / shade) support.
+
+      # Primary
+      # NOTE: This centers around `primary-40` rather than `primary-50` because
+      # HA uses `-40` as the default brand color for some reason.
+      ha-color-primary-05: rgb(84, 76, 122)
+      ha-color-primary-10: rgb(91, 73, 139)
+      ha-color-primary-20: rgb(106, 68, 172)
+      ha-color-primary-30: rgb(121, 63, 205)
+      ha-color-primary-40: rgb(136, 57, 239)
+      ha-color-primary-50: rgb(153, 88, 240)
+      ha-color-primary-60: rgb(170, 117, 241)
+      ha-color-primary-70: rgb(186, 147, 242)
+      ha-color-primary-80: rgb(205, 181, 243)
+      ha-color-primary-90: rgb(222, 210, 244)
+      ha-color-primary-95: rgb(231, 226, 245)
+
+      # Neutral
+      ha-color-neutral-05: rgb(84, 87, 112)
+      ha-color-neutral-10: rgb(92, 96, 119)
+      ha-color-neutral-20: rgb(109, 111, 133)
+      ha-color-neutral-30: rgb(125, 128, 147)
+      ha-color-neutral-40: rgb(142, 143, 161)
+      ha-color-neutral-50: rgb(158, 160, 175)
+      ha-color-neutral-60: rgb(173, 177, 189)
+      ha-color-neutral-70: rgb(191, 193, 203)
+      ha-color-neutral-80: rgb(206, 209, 217)
+      ha-color-neutral-90: rgb(223, 225, 231)
+      ha-color-neutral-95: rgb(231, 233, 238)
+
+      # Orange
+      ha-color-orange-05: rgb(94, 81, 95)
+      ha-color-orange-10: rgb(112, 83, 86)
+      ha-color-orange-20: rgb(148, 87, 67)
+      ha-color-orange-30: rgb(182, 92, 49)
+      ha-color-orange-40: rgb(218, 96, 30)
+      ha-color-orange-50: rgb(254, 100, 11)
+      ha-color-orange-60: rgb(251, 128, 58)
+      ha-color-orange-70: rgb(248, 156, 105)
+      ha-color-orange-80: rgb(245, 185, 151)
+      ha-color-orange-90: rgb(242, 213, 198)
+      ha-color-orange-95: rgb(241, 226, 221)
+
+      # Red
+      ha-color-red-05: rgb(89, 73, 100)
+      ha-color-red-10: rgb(103, 66, 95)
+      ha-color-red-20: rgb(130, 53, 86)
+      ha-color-red-30: rgb(156, 41, 76)
+      ha-color-red-40: rgb(183, 28, 67)
+      ha-color-red-50: rgb(210, 15, 57)
+      ha-color-red-60: rgb(216, 60, 95)
+      ha-color-red-70: rgb(222, 105, 132)
+      ha-color-red-80: rgb(227, 151, 170)
+      ha-color-red-90: rgb(233, 196, 207)
+      ha-color-red-95: rgb(236, 218, 226)
+
+      # Green
+      ha-color-green-05: rgb(75, 87, 98)
+      ha-color-green-10: rgb(74, 95, 93)
+      ha-color-green-20: rgb(72, 111, 80)
+      ha-color-green-30: rgb(68, 128, 68)
+      ha-color-green-40: rgb(66, 144, 55)
+      ha-color-green-50: rgb(64, 160, 43)
+      ha-color-green-60: rgb(99, 176, 83)
+      ha-color-green-70: rgb(134, 192, 124)
+      ha-color-green-80: rgb(169, 209, 164)
+      ha-color-green-90: rgb(204, 225, 205)
+      ha-color-green-95: rgb(222, 232, 224)
+
+      ######################
+      # HA Semantic Colors #
+      ######################
+      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+
+      ha-color-focus: var(--ha-color-orange-60)
+
+      # Text
+      ha-color-text-primary: var(--catppuccin-text)
+      ha-color-text-secondary: var(--catppuccin-subtext1)
+      ha-color-text-disabled: var(--catppuccin-overlay1)
+      ha-color-text-link: var(--catppuccin-blue)
+
+      # Border primary
+      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-normal: var(--ha-color-primary-70)
+      ha-color-border-primary-loud: var(--ha-color-primary-40)
+
+      # Border neutral
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-normal: var(--ha-color-neutral-60)
+      ha-color-border-neutral-loud: var(--ha-color-neutral-40)
+
+      # Border danger
+      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-normal: var(--ha-color-red-70)
+      ha-color-border-danger-loud: var(--ha-color-red-40)
+
+      # Border warning
+      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-normal: var(--ha-color-orange-70)
+      ha-color-border-warning-loud: var(--ha-color-orange-40)
+
+      # Border success
+      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-normal: var(--ha-color-green-70)
+      ha-color-border-success-loud: var(--ha-color-green-40)
+
+      # Fill primary quiet
+      ha-color-fill-primary-quiet-resting: var(--ha-color-primary-95)
+      ha-color-fill-primary-quiet-hover: var(--ha-color-primary-90)
+      ha-color-fill-primary-quiet-active: var(--ha-color-primary-95)
+
+      # Fill primary normal
+      ha-color-fill-primary-normal-resting: var(--ha-color-primary-90)
+      ha-color-fill-primary-normal-hover: var(--ha-color-primary-80)
+      ha-color-fill-primary-normal-active: var(--ha-color-primary-90)
+
+      # Fill primary loud
+      ha-color-fill-primary-loud-resting: var(--ha-color-primary-40)
+      ha-color-fill-primary-loud-hover: var(--ha-color-primary-30)
+      ha-color-fill-primary-loud-active: var(--ha-color-primary-40)
+
+      # Fill neutral quiet
+      ha-color-fill-neutral-quiet-resting: var(--ha-color-neutral-95)
+      ha-color-fill-neutral-quiet-hover: var(--ha-color-neutral-90)
+      ha-color-fill-neutral-quiet-active: var(--ha-color-neutral-95)
+
+      # Fill neutral normal
+      ha-color-fill-neutral-normal-resting: var(--ha-color-neutral-90)
+      ha-color-fill-neutral-normal-hover: var(--ha-color-neutral-80)
+      ha-color-fill-neutral-normal-active: var(--ha-color-neutral-90)
+
+      # Fill neutral loud
+      ha-color-fill-neutral-loud-resting: var(--ha-color-neutral-40)
+      ha-color-fill-neutral-loud-hover: var(--ha-color-neutral-30)
+      ha-color-fill-neutral-loud-active: var(--ha-color-neutral-40)
+
+      # Fill disabled quiet
+      ha-color-fill-disabled-quiet-resting: var(--ha-color-neutral-95)
+
+      # Fill disabled normal
+      ha-color-fill-disabled-normal-resting: var(--ha-color-neutral-95)
+
+      # Fill disabled loud
+      ha-color-fill-disabled-loud-resting: var(--ha-color-neutral-80)
+
+      # Fill danger quiet
+      ha-color-fill-danger-quiet-resting: var(--ha-color-red-95)
+      ha-color-fill-danger-quiet-hover: var(--ha-color-red-90)
+      ha-color-fill-danger-quiet-active: var(--ha-color-red-95)
+
+      # Fill danger normal
+      ha-color-fill-danger-normal-resting: var(--ha-color-red-90)
+      ha-color-fill-danger-normal-hover: var(--ha-color-red-80)
+      ha-color-fill-danger-normal-active: var(--ha-color-red-90)
+
+      # Fill danger loud
+      ha-color-fill-danger-loud-resting: var(--ha-color-red-50)
+      ha-color-fill-danger-loud-hover: var(--ha-color-red-40)
+      ha-color-fill-danger-loud-active: var(--ha-color-red-50)
+
+      # Fill warning quiet
+      ha-color-fill-warning-quiet-resting: var(--ha-color-orange-95)
+      ha-color-fill-warning-quiet-hover: var(--ha-color-orange-90)
+      ha-color-fill-warning-quiet-active: var(--ha-color-orange-95)
+
+      # Fill warning normal
+      ha-color-fill-warning-normal-resting: var(--ha-color-orange-90)
+      ha-color-fill-warning-normal-hover: var(--ha-color-orange-80)
+      ha-color-fill-warning-normal-active: var(--ha-color-orange-90)
+
+      # Fill warning loud
+      ha-color-fill-warning-loud-resting: var(--ha-color-orange-70)
+      ha-color-fill-warning-loud-hover: var(--ha-color-orange-50)
+      ha-color-fill-warning-loud-active: var(--ha-color-orange-70)
+
+      # Fill success quiet
+      ha-color-fill-success-quiet-resting: var(--ha-color-green-95)
+      ha-color-fill-success-quiet-hover: var(--ha-color-green-90)
+      ha-color-fill-success-quiet-active: var(--ha-color-green-95)
+
+      # Fill success normal
+      ha-color-fill-success-normal-resting: var(--ha-color-green-90)
+      ha-color-fill-success-normal-hover: var(--ha-color-green-80)
+      ha-color-fill-success-normal-active: var(--ha-color-green-90)
+
+      # Fill success loud
+      ha-color-fill-success-loud-resting: var(--ha-color-green-50)
+      ha-color-fill-success-loud-hover: var(--ha-color-green-40)
+      ha-color-fill-success-loud-active: var(--ha-color-green-50)
+
+      # On primary
+      ha-color-on-primary-quiet: var(--ha-color-primary-50)
+      ha-color-on-primary-normal: var(--ha-color-primary-40)
+      ha-color-on-primary-loud: var(--white-color)
+
+      # On neutral
+      ha-color-on-neutral-quiet: var(--ha-color-neutral-50)
+      ha-color-on-neutral-normal: var(--ha-color-neutral-40)
+      ha-color-on-neutral-loud: var(--white-color)
+
+      # On disabled
+      ha-color-on-disabled-quiet: var(--ha-color-neutral-80)
+      ha-color-on-disabled-normal: var(--ha-color-neutral-70)
+      ha-color-on-disabled-loud: var(--ha-color-neutral-95)
+
+      # On danger
+      ha-color-on-danger-quiet: var(--ha-color-red-50)
+      ha-color-on-danger-normal: var(--ha-color-red-40)
+      ha-color-on-danger-loud: var(--white-color)
+
+      # On warning
+      ha-color-on-warning-quiet: var(--ha-color-orange-50)
+      ha-color-on-warning-normal: var(--ha-color-orange-40)
+      ha-color-on-warning-loud: var(--white-color)
+
+      # On success
+      ha-color-on-success-quiet: var(--ha-color-green-50)
+      ha-color-on-success-normal: var(--ha-color-green-40)
+      ha-color-on-success-loud: var(--white-color)
+
+      ###################
+      # HA Other Colors #
+      ###################
+      # List from the "color.globals.ts" file in home-assistant/frontend.
+
+      # Text
+      primary-text-color: var(--ha-color-text-primary)
+      secondary-text-color: var(--ha-color-text-secondary)
+      text-primary-color: var(--catppuccin-crust)
+      text-light-primary-color: var(--catppuccin-crust)
+      disabled-text-color: var(--catppuccin-overlay1)
+
+      # Main interface colors
+      # primary-color: var(--ha-color-primary-40)
+      dark-primary-color: var(--ha-color-primary-30)
+      darker-primary-color: var(--ha-color-primary-20)
+      light-primary-color: var(--ha-color-primary-50)
+      accent-color: var(--primary-color)
+      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      outline-color: var(--catppuccin-crust)
+      outline-hover-color: var(--catppuccin-surface2)
+
+      # RGB
+      rgb-primary-color: var(--catppuccin-mauve-rgb)
+      rgb-accent-color: var(--catppuccin-mauve-rgb)
+      rgb-primary-text-color: var(--catppuccin-text-rgb)
+      rgb-secondary-text-color: var(--catppuccin-subtext1-rgb)
+      rgb-text-primary-color: var(--catppuccin-text-rgb)
+      rgb-card-background-color: var(--catppuccin-base-rgb)
+
+      rgb-warning-color: var(--catppuccin-yellow-rgb)
+      rgb-error-color: var(--catppuccin-red-rgb)
+      rgb-success-color: var(--catppuccin-green-rgb)
+      rgb-info-color: var(--catppuccin-blue-rgb)
+
+      scrollbar-thumb-color: var(--primary-color)
+
+      error-color: var(--catppuccin-red)
+      warning-color: var(--catppuccin-yellow)
+      success-color: var(--catppuccin-green)
+      info-color: var(--catppuccin-blue)
+
+      # Backgrounds
+      card-background-color: var(--catppuccin-base)
+      primary-background-color: var(--catppuccin-mantle)
+      secondary-background-color: var(--catppuccin-mantle)
+      clear-background-color: var(--card-background-color)
+
+      # For label-badge
+      label-badge-grey: var(--secondary-text-color)
+
+      # States icon
+      state-icon-color: var(--primary-color)
+
+      # Energy
+      energy-grid-consumption-color: var(--catppuccin-lavender)
+      energy-grid-return-color: var(--catppuccin-mauve)
+      energy-solar-color: var(--catppuccin-yellow)
+      energy-non-fossil-color: var(--catppuccin-green)
+      energy-battery-out-color: var(--catppuccin-teal)
+      energy-battery-in-color: var(--catppuccin-pink)
+      energy-gas-color: var(--catppuccin-red)
+      energy-water-color: var(--catppuccin-sky)
+
+      # Color
+      disabled-color: var(--catppuccin-overlay1)
+      red-color: var(--catppuccin-red)
+      pink-color: var(--catppuccin-pink)
+      purple-color: var(--catppuccin-mauve)
+      deep-purple-color: var(--catppuccin-mauve)
+      indigo-color: var(--catppuccin-lavender)
+      blue-color: var(--catppuccin-blue)
+      light-blue-color: var(--catppuccin-sky)
+      cyan-color: var(--catppuccin-teal)
+      teal-color: var(--catppuccin-teal)
+      green-color: var(--catppuccin-green)
+      light-green-color: var(--catppuccin-green)
+      lime-color: var(--catppuccin-green)
+      yellow-color: var(--catppuccin-yellow)
+      amber-color: var(--catppuccin-yellow)
+      orange-color: var(--catppuccin-peach)
+      deep-orange-color: var(--catppuccin-maroon)
+      brown-color: var(--catppuccin-flamingo)
+      light-grey-color: var(--catppuccin-surface0)
+      grey-color: var(--catppuccin-surface2)
+      dark-grey-color: var(--catppuccin-overlay1)
+      blue-grey-color: var(--dark-grey-color)
+      black-color: var(--catppuccin-text)
+      white-color: var(--catppuccin-crust)
+
+      # Input components
+      input-idle-line-color: var(--primary-text-color)
+      input-hover-line-color: var(--accent-color)
+      input-disabled-line-color: var(--disabled-text-color)
+      input-outlined-idle-border-color: var(--disabled-text-color)
+      input-outlined-hover-border-color: var(--disabled-text-color)
+      input-outlined-disabled-border-color: var(--disabled-text-color)
+      input-fill-color: var(--primary-background-color)
+      input-disabled-fill-color: var(--catppuccin-surface1)
+      input-ink-color: var(--primary-text-color)
+      input-label-ink-color: var(--secondary-text-color)
+      input-disabled-ink-color: var(--disabled-text-color)
+      input-dropdown-icon-color: var(--secondary-text-color)
+
+      # State color
+      state-active-color: var(--catppuccin-mauve)
+
+      sidebar-background-color: var(--catppuccin-crust)
+      switch-unchecked-color: var(--catppuccin-overlay0)
+      switch-unchecked-button-color: var(--switch-unchecked-color)
+      switch-unchecked-track-color: var(--switch-unchecked-color)
+
+      app-header-text-color: var(--primary-text-color)
+      app-header-background-color: var(--catppuccin-crust)
+
+      # Codemirror
+      codemirror-keyword: var(--catppuccin-mauve)
+      codemirror-operator: var(--catppuccin-sky)
+      codemirror-variable: var(--catppuccin-blue) # Functions
+      codemirror-variable-2: var(--catppuccin-text) # "Special variable"s
+      codemirror-variable-3: var(--catppuccin-text) # Currently unused
+      codemirror-builtin: var(--catppuccin-red)
+      codemirror-atom: var(--catppuccin-red)
+      codemirror-number: var(--catppuccin-peach)
+      codemirror-def: var(--catppuccin-text)
+      codemirror-string: var(--catppuccin-green)
+      codemirror-string-2: var(--catppuccin-green) # Currently unused
+      codemirror-comment: var(--catppuccin-overlay2)
+      codemirror-tag: var(--catppuccin-blue) # Currently unused
+      codemirror-meta: var(--catppuccin-overlay2)
+      codemirror-attribute: var(--catppuccin-yellow)
+      codemirror-property: var(--catppuccin-blue)
+      codemirror-qualifier: var(--catppuccin-peach)
+      codemirror-type: var(--catppuccin-yellow) # Currently unused
+
+      ################
+      # Other colors #
+      ################
+      # These colors are respected by Home Assistant (currently), but aren't
+      # defined directly in the main theme.
+      text-accent-color: var(--catppuccin-crust)
+      md-slider-inactive-track-color: var(--catppuccin-overlay0)
+      app-header-edit-background-color: var(--catppuccin-surface2)
+      app-header-edit-text-color: var(--primary-text-color)
+
+      mdc-ripple-color: '#aaaaaa'
+      mdc-linear-progress-buffer-color: '#f00'
+
+      ##########
+      # Graphs #
+      ##########
+      graph-color-1: var(--catppuccin-mauve)
+      graph-color-2: var(--catppuccin-green)
+      graph-color-3: var(--catppuccin-red)
+      graph-color-4: var(--catppuccin-blue)
+      graph-color-5: var(--catppuccin-pink)
+      graph-color-6: var(--catppuccin-yellow)
+      graph-color-7: var(--catppuccin-sky)
+      graph-color-8: var(--catppuccin-maroon)
+      graph-color-9: var(--catppuccin-lavender)
+      graph-color-10: var(--catppuccin-peach)
+      graph-color-11: var(--catppuccin-teal)
+      graph-color-12: var(--catppuccin-rosewater)
+      graph-color-13: var(--catppuccin-sapphire)
+      graph-color-14: var(--catppuccin-flamingo)
+    dark:
       #####################
       # Catppuccin Colors #
       #####################
@@ -1826,15 +4522,3 @@ Catppuccin Mocha:
       graph-color-12: var(--catppuccin-rosewater)
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
-Catppuccin Auto Latte Frappe:
-  modes:
-    light: *latte
-    dark: *frappe
-Catppuccin Auto Latte Macchiato:
-  modes:
-    light: *latte
-    dark: *macchiato
-Catppuccin Auto Latte Mocha:
-  modes:
-    light: *latte
-    dark: *mocha
