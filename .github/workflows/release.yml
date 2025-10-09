@@ -37,4 +37,7 @@ jobs:
       - name: Upload Theme Assets
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload ${{ needs.release-please.outputs.tag_name }} themes/* --clobber
+        run: |
+          cd themes
+          zip catppuccin-accents.zip catppuccin-*.yaml
+          gh release upload ${{ needs.release-please.outputs.tag_name }} catppuccin.yaml catppuccin-accents.zip --clobber
