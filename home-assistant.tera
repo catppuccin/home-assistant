@@ -392,7 +392,7 @@ app-header-edit-background-color: var(--catppuccin-surface2)
 app-header-edit-text-color: var(--primary-text-color)
 
 mdc-ripple-color: '#aaaaaa'
-mdc-linear-progress-buffer-color: '#f00'
+mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
 ##########
 # Graphs #
