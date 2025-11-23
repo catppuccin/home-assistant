@@ -12,7 +12,7 @@ jobs:
     name: HACS
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: hacs/action@main
         with:
           category: theme
@@ -21,7 +21,7 @@ jobs:
     name: Whiskers
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: catppuccin/setup-whiskers@v2
       - name: Generate themes
         run: whiskers home-assistant.tera
