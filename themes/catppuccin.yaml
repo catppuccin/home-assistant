@@ -426,7 +426,7 @@ Catppuccin Latte:
   app-header-edit-text-color: var(--primary-text-color)
 
   mdc-ripple-color: '#aaaaaa'
-  mdc-linear-progress-buffer-color: '#f00'
+  mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
   ##########
   # Graphs #
@@ -877,7 +877,7 @@ Catppuccin Frappe:
   app-header-edit-text-color: var(--primary-text-color)
 
   mdc-ripple-color: '#aaaaaa'
-  mdc-linear-progress-buffer-color: '#f00'
+  mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
   ##########
   # Graphs #
@@ -1328,7 +1328,7 @@ Catppuccin Macchiato:
   app-header-edit-text-color: var(--primary-text-color)
 
   mdc-ripple-color: '#aaaaaa'
-  mdc-linear-progress-buffer-color: '#f00'
+  mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
   ##########
   # Graphs #
@@ -1779,7 +1779,7 @@ Catppuccin Mocha:
   app-header-edit-text-color: var(--primary-text-color)
 
   mdc-ripple-color: '#aaaaaa'
-  mdc-linear-progress-buffer-color: '#f00'
+  mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
   ##########
   # Graphs #
@@ -2232,7 +2232,7 @@ Catppuccin Auto Latte Frappe:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
@@ -2679,7 +2679,7 @@ Catppuccin Auto Latte Frappe:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
@@ -3128,7 +3128,7 @@ Catppuccin Auto Latte Macchiato:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
@@ -3575,7 +3575,7 @@ Catppuccin Auto Latte Macchiato:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
@@ -4024,7 +4024,7 @@ Catppuccin Auto Latte Mocha:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
@@ -4471,7 +4471,7 @@ Catppuccin Auto Latte Mocha:
       app-header-edit-text-color: var(--primary-text-color)
 
       mdc-ripple-color: '#aaaaaa'
-      mdc-linear-progress-buffer-color: '#f00'
+      mdc-linear-progress-buffer-color: var(--catppuccin-surface1)
 
       ##########
       # Graphs #
