@@ -59,6 +59,9 @@
 
 ### With [HACS](https://hacs.xyz/)
 
+> [!NOTE]
+> This will install the default mauve theme shown in the example screenshots. If you wish to have a different highlight color you will need to follow the [manual installation steps](#manual) below.
+
 1. Add the following code to your `configuration.yaml` file (reboot required).
 
 ```yaml
@@ -86,9 +89,10 @@ frontend:
   ... # your configuration.
 ```
 
-2. Download your preferred theme(s) from the [latest GitHub release](https://github.com/catppuccin/home-assistant/releases/latest) (the screenshots use `mauve`).
-3. Move the downloaded file(s) to the `themes` folder in your
-   [HA configuration directory](https://www.home-assistant.io/docs/configuration/#to-find-the-configuration-directory). (E.g. `~/config/themes`)
+2. Go to the [latest GitHub release](https://github.com/catppuccin/home-assistant/releases/latest)
+   - If you want to install the default (mauve) theme, download the `catppuccin.yaml` file
+   - If you want a different highlight color, download and extract the `catppuccin-accents.zip` file and select the accent(s) you want available
+3. Move the selected file(s) to the `themes` folder in your [HA configuration directory](https://www.home-assistant.io/docs/configuration/#to-find-the-configuration-directory). (E.g. `~/config/themes`)
 4. Run the `frontend.reload_themes` action or restart Home Assistant.
 5. Go to the [Profile General tab](https://my.home-assistant.io/redirect/profile) and change Theme under Browser Settings to your desired theme.
 
