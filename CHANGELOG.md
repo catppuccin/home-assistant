@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/catppuccin/home-assistant/compare/v2.1.1...v2.1.2) (2025-11-24)
+
+
+### Bug Fixes
+
+* explicitly set primary color ([#70](https://github.com/catppuccin/home-assistant/issues/70)) ([fdbb290](https://github.com/catppuccin/home-assistant/commit/fdbb2903fb41e3a852aba2c1bc8e91b85c0efc76))
+
 ## [2.1.1](https://github.com/catppuccin/home-assistant/compare/v2.1.0...v2.1.1) (2025-11-24)
 
 
