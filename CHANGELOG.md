@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/catppuccin/home-assistant/compare/v2.1.0...v2.1.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* color progress bar buffer section correctly ([#62](https://github.com/catppuccin/home-assistant/issues/62)) ([20fcbbc](https://github.com/catppuccin/home-assistant/commit/20fcbbcb2fb24dc5f52dd2d8e8e1473245213e91))
+
 ## [2.1.0](https://github.com/catppuccin/home-assistant/compare/v2.0.1...v2.1.0) (2025-10-09)
 
 
