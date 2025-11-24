@@ -37,6 +37,12 @@ body:
       required: true
   - type: input
     attributes:
+      label: What version of the theme are you using?
+      placeholder: v2.0.0
+    validations:
+      required: true
+  - type: input
+    attributes:
       label: What version of Home Assistant Core are you using?
       description: "You can find your version by going to [`Settings` → `About`](https://my.home-assistant.io/redirect/info/)"
       placeholder: "2025.9.0"
