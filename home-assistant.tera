@@ -259,7 +259,7 @@ text-light-primary-color: var(--catppuccin-crust)
 disabled-text-color: var(--catppuccin-overlay1)
 
 # Main interface colors
-# primary-color: var(--ha-color-primary-40)
+primary-color: var(--ha-color-primary-40)
 dark-primary-color: var(--ha-color-primary-30)
 darker-primary-color: var(--ha-color-primary-20)
 light-primary-color: var(--ha-color-primary-50)
