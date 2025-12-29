@@ -1,6 +1,6 @@
 services:
   home-assistant:
-    image: ghcr.io/home-assistant/home-assistant:2025.11.3
+    image: ghcr.io/home-assistant/home-assistant:2025.12.5
     restart: unless-stopped
     volumes:
       - ./config:/config
