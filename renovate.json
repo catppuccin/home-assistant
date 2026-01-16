@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>catppuccin/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchDepNames": "ghcr.io/home-assistant/home-assistant",
+      "description": "Override version handling because the HA Docker image uses yyyy.m.patch format, not semantic versioning.",
+      "separateMajorMinor": false,
+      "separateMinorPatch": true
+    }
   ]
 }
