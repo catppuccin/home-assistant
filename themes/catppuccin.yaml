@@ -131,7 +131,11 @@ Catppuccin Latte:
   ######################
   # HA Semantic Colors #
   ######################
-  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+  # This section resets HA's semantic colors to their "light mode" settings. We do
+  # this because due to the way this theme works it is much easier to swap out the
+  # underlying palette, rather than the semantic uses of it.
+  #
+  # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
   ha-color-focus: var(--ha-color-orange-60)
 
@@ -142,27 +146,27 @@ Catppuccin Latte:
   ha-color-text-link: var(--catppuccin-blue)
 
   # Border primary
-  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-quiet: var(--ha-color-primary-90)
   ha-color-border-primary-normal: var(--ha-color-primary-70)
   ha-color-border-primary-loud: var(--ha-color-primary-40)
 
   # Border neutral
-  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
   ha-color-border-neutral-normal: var(--ha-color-neutral-60)
   ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
   # Border danger
-  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-quiet: var(--ha-color-red-90)
   ha-color-border-danger-normal: var(--ha-color-red-70)
   ha-color-border-danger-loud: var(--ha-color-red-40)
 
   # Border warning
-  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-quiet: var(--ha-color-orange-90)
   ha-color-border-warning-normal: var(--ha-color-orange-70)
   ha-color-border-warning-loud: var(--ha-color-orange-40)
 
   # Border success
-  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-quiet: var(--ha-color-green-90)
   ha-color-border-success-normal: var(--ha-color-green-70)
   ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -279,6 +283,13 @@ Catppuccin Latte:
   ha-color-on-success-quiet: var(--ha-color-green-50)
   ha-color-on-success-normal: var(--ha-color-green-40)
   ha-color-on-success-loud: var(--white-color)
+
+  # Surfaces
+  ha-color-surface-default: var(--catppuccin-surface0)
+  ha-color-on-surface-default: var(--catppuccin-text)
+
+  # Scrollable fade
+  ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
   ###################
   # HA Other Colors #
@@ -582,7 +593,11 @@ Catppuccin Frappe:
   ######################
   # HA Semantic Colors #
   ######################
-  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+  # This section resets HA's semantic colors to their "light mode" settings. We do
+  # this because due to the way this theme works it is much easier to swap out the
+  # underlying palette, rather than the semantic uses of it.
+  #
+  # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
   ha-color-focus: var(--ha-color-orange-60)
 
@@ -593,27 +608,27 @@ Catppuccin Frappe:
   ha-color-text-link: var(--catppuccin-blue)
 
   # Border primary
-  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-quiet: var(--ha-color-primary-90)
   ha-color-border-primary-normal: var(--ha-color-primary-70)
   ha-color-border-primary-loud: var(--ha-color-primary-40)
 
   # Border neutral
-  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
   ha-color-border-neutral-normal: var(--ha-color-neutral-60)
   ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
   # Border danger
-  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-quiet: var(--ha-color-red-90)
   ha-color-border-danger-normal: var(--ha-color-red-70)
   ha-color-border-danger-loud: var(--ha-color-red-40)
 
   # Border warning
-  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-quiet: var(--ha-color-orange-90)
   ha-color-border-warning-normal: var(--ha-color-orange-70)
   ha-color-border-warning-loud: var(--ha-color-orange-40)
 
   # Border success
-  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-quiet: var(--ha-color-green-90)
   ha-color-border-success-normal: var(--ha-color-green-70)
   ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -730,6 +745,13 @@ Catppuccin Frappe:
   ha-color-on-success-quiet: var(--ha-color-green-50)
   ha-color-on-success-normal: var(--ha-color-green-40)
   ha-color-on-success-loud: var(--white-color)
+
+  # Surfaces
+  ha-color-surface-default: var(--catppuccin-surface0)
+  ha-color-on-surface-default: var(--catppuccin-text)
+
+  # Scrollable fade
+  ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
   ###################
   # HA Other Colors #
@@ -1033,7 +1055,11 @@ Catppuccin Macchiato:
   ######################
   # HA Semantic Colors #
   ######################
-  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+  # This section resets HA's semantic colors to their "light mode" settings. We do
+  # this because due to the way this theme works it is much easier to swap out the
+  # underlying palette, rather than the semantic uses of it.
+  #
+  # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
   ha-color-focus: var(--ha-color-orange-60)
 
@@ -1044,27 +1070,27 @@ Catppuccin Macchiato:
   ha-color-text-link: var(--catppuccin-blue)
 
   # Border primary
-  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-quiet: var(--ha-color-primary-90)
   ha-color-border-primary-normal: var(--ha-color-primary-70)
   ha-color-border-primary-loud: var(--ha-color-primary-40)
 
   # Border neutral
-  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
   ha-color-border-neutral-normal: var(--ha-color-neutral-60)
   ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
   # Border danger
-  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-quiet: var(--ha-color-red-90)
   ha-color-border-danger-normal: var(--ha-color-red-70)
   ha-color-border-danger-loud: var(--ha-color-red-40)
 
   # Border warning
-  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-quiet: var(--ha-color-orange-90)
   ha-color-border-warning-normal: var(--ha-color-orange-70)
   ha-color-border-warning-loud: var(--ha-color-orange-40)
 
   # Border success
-  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-quiet: var(--ha-color-green-90)
   ha-color-border-success-normal: var(--ha-color-green-70)
   ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -1181,6 +1207,13 @@ Catppuccin Macchiato:
   ha-color-on-success-quiet: var(--ha-color-green-50)
   ha-color-on-success-normal: var(--ha-color-green-40)
   ha-color-on-success-loud: var(--white-color)
+
+  # Surfaces
+  ha-color-surface-default: var(--catppuccin-surface0)
+  ha-color-on-surface-default: var(--catppuccin-text)
+
+  # Scrollable fade
+  ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
   ###################
   # HA Other Colors #
@@ -1484,7 +1517,11 @@ Catppuccin Mocha:
   ######################
   # HA Semantic Colors #
   ######################
-  # List from the "semantic.globals.ts" file in home-assistant/frontend.
+  # This section resets HA's semantic colors to their "light mode" settings. We do
+  # this because due to the way this theme works it is much easier to swap out the
+  # underlying palette, rather than the semantic uses of it.
+  #
+  # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
   ha-color-focus: var(--ha-color-orange-60)
 
@@ -1495,27 +1532,27 @@ Catppuccin Mocha:
   ha-color-text-link: var(--catppuccin-blue)
 
   # Border primary
-  ha-color-border-primary-quiet: var(--ha-color-primary-80)
+  ha-color-border-primary-quiet: var(--ha-color-primary-90)
   ha-color-border-primary-normal: var(--ha-color-primary-70)
   ha-color-border-primary-loud: var(--ha-color-primary-40)
 
   # Border neutral
-  ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+  ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
   ha-color-border-neutral-normal: var(--ha-color-neutral-60)
   ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
   # Border danger
-  ha-color-border-danger-quiet: var(--ha-color-red-80)
+  ha-color-border-danger-quiet: var(--ha-color-red-90)
   ha-color-border-danger-normal: var(--ha-color-red-70)
   ha-color-border-danger-loud: var(--ha-color-red-40)
 
   # Border warning
-  ha-color-border-warning-quiet: var(--ha-color-orange-80)
+  ha-color-border-warning-quiet: var(--ha-color-orange-90)
   ha-color-border-warning-normal: var(--ha-color-orange-70)
   ha-color-border-warning-loud: var(--ha-color-orange-40)
 
   # Border success
-  ha-color-border-success-quiet: var(--ha-color-green-80)
+  ha-color-border-success-quiet: var(--ha-color-green-90)
   ha-color-border-success-normal: var(--ha-color-green-70)
   ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -1632,6 +1669,13 @@ Catppuccin Mocha:
   ha-color-on-success-quiet: var(--ha-color-green-50)
   ha-color-on-success-normal: var(--ha-color-green-40)
   ha-color-on-success-loud: var(--white-color)
+
+  # Surfaces
+  ha-color-surface-default: var(--catppuccin-surface0)
+  ha-color-on-surface-default: var(--catppuccin-text)
+
+  # Scrollable fade
+  ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
   ###################
   # HA Other Colors #
@@ -1937,7 +1981,11 @@ Catppuccin Auto Latte Frappe:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -1948,27 +1996,27 @@ Catppuccin Auto Latte Frappe:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -2085,6 +2133,13 @@ Catppuccin Auto Latte Frappe:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
@@ -2384,7 +2439,11 @@ Catppuccin Auto Latte Frappe:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -2395,27 +2454,27 @@ Catppuccin Auto Latte Frappe:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -2532,6 +2591,13 @@ Catppuccin Auto Latte Frappe:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
@@ -2833,7 +2899,11 @@ Catppuccin Auto Latte Macchiato:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -2844,27 +2914,27 @@ Catppuccin Auto Latte Macchiato:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -2981,6 +3051,13 @@ Catppuccin Auto Latte Macchiato:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
@@ -3280,7 +3357,11 @@ Catppuccin Auto Latte Macchiato:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -3291,27 +3372,27 @@ Catppuccin Auto Latte Macchiato:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -3428,6 +3509,13 @@ Catppuccin Auto Latte Macchiato:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
@@ -3729,7 +3817,11 @@ Catppuccin Auto Latte Mocha:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -3740,27 +3832,27 @@ Catppuccin Auto Latte Mocha:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -3877,6 +3969,13 @@ Catppuccin Auto Latte Mocha:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
@@ -4176,7 +4275,11 @@ Catppuccin Auto Latte Mocha:
       ######################
       # HA Semantic Colors #
       ######################
-      # List from the "semantic.globals.ts" file in home-assistant/frontend.
+      # This section resets HA's semantic colors to their "light mode" settings. We do
+      # this because due to the way this theme works it is much easier to swap out the
+      # underlying palette, rather than the semantic uses of it.
+      #
+      # Last synced from: https://github.com/home-assistant/frontend/blob/5be7bad17608de0304a46683ccca98cd4be8ae00/src/resources/theme/color/semantic.globals.ts
 
       ha-color-focus: var(--ha-color-orange-60)
 
@@ -4187,27 +4290,27 @@ Catppuccin Auto Latte Mocha:
       ha-color-text-link: var(--catppuccin-blue)
 
       # Border primary
-      ha-color-border-primary-quiet: var(--ha-color-primary-80)
+      ha-color-border-primary-quiet: var(--ha-color-primary-90)
       ha-color-border-primary-normal: var(--ha-color-primary-70)
       ha-color-border-primary-loud: var(--ha-color-primary-40)
 
       # Border neutral
-      ha-color-border-neutral-quiet: var(--ha-color-neutral-80)
+      ha-color-border-neutral-quiet: var(--ha-color-neutral-90)
       ha-color-border-neutral-normal: var(--ha-color-neutral-60)
       ha-color-border-neutral-loud: var(--ha-color-neutral-40)
 
       # Border danger
-      ha-color-border-danger-quiet: var(--ha-color-red-80)
+      ha-color-border-danger-quiet: var(--ha-color-red-90)
       ha-color-border-danger-normal: var(--ha-color-red-70)
       ha-color-border-danger-loud: var(--ha-color-red-40)
 
       # Border warning
-      ha-color-border-warning-quiet: var(--ha-color-orange-80)
+      ha-color-border-warning-quiet: var(--ha-color-orange-90)
       ha-color-border-warning-normal: var(--ha-color-orange-70)
       ha-color-border-warning-loud: var(--ha-color-orange-40)
 
       # Border success
-      ha-color-border-success-quiet: var(--ha-color-green-80)
+      ha-color-border-success-quiet: var(--ha-color-green-90)
       ha-color-border-success-normal: var(--ha-color-green-70)
       ha-color-border-success-loud: var(--ha-color-green-40)
 
@@ -4324,6 +4427,13 @@ Catppuccin Auto Latte Mocha:
       ha-color-on-success-quiet: var(--ha-color-green-50)
       ha-color-on-success-normal: var(--ha-color-green-40)
       ha-color-on-success-loud: var(--white-color)
+
+      # Surfaces
+      ha-color-surface-default: var(--catppuccin-surface0)
+      ha-color-on-surface-default: var(--catppuccin-text)
+
+      # Scrollable fade
+      ha-color-shadow-scrollable-fade: rgba(0, 0, 0, 0.08)
 
       ###################
       # HA Other Colors #
