@@ -55,6 +55,12 @@ body:
       placeholder: "20250828.0"
     validations:
       required: true
+  - type: input
+    attributes:
+      label: What browser are you using?
+      placeholder: Firefox 148.0
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Any additional comments?
