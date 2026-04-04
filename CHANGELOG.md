@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/catppuccin/home-assistant/compare/v2.1.2...v2.1.3) (2026-04-04)
+
+
+### Bug Fixes
+
+* account for new semantic colors ([#82](https://github.com/catppuccin/home-assistant/issues/82)) ([f949c0d](https://github.com/catppuccin/home-assistant/commit/f949c0d6cd530be9bd4f134444722e57f1d3de51))
+
 ## [2.1.2](https://github.com/catppuccin/home-assistant/compare/v2.1.1...v2.1.2) (2025-11-24)
 
 
