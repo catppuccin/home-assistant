@@ -12,6 +12,38 @@ graph_colors: ["mauve", "green", "red", "blue", "pink", "yellow", "sky", "maroon
   {%- set accent = 'mauve' -%}
 {%- endif -%}
 
+{%- macro textDividerStyles() -%}
+.text-divider-container {
+  --divider-color: var(--catppuccin-divider-color);
+}
+.text-divider-center {
+  border-bottom-color: var(--catppuccin-divider-color) !important;
+}
+.text-divider-center span {
+  color: var(--icon-primary-color, var(--primary-color)) !important;
+  font-weight: 300 !important;
+  background: var(--ha-card-background, var(--card-background-color)) !important;
+}
+{%- endmacro textDividerStyles -%}
+
+{%- macro customCardStyles() -%}
+:host(.type-custom-bar-card) {
+  --bar-card-border-radius: 12px;
+}
+:host(.type-custom-bar-card) ha-card,
+:host(.type-custom-button-card) ha-card.button-card-main {
+  border: none !important;
+}
+{{ self::textDividerStyles() }}
+.mdc-data-table__header-cell,
+.mdc-data-table__cell.group-header,
+.group-header {
+  color: var(--primary-color) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+{%- endmacro customCardStyles -%}
+
 {%- macro haTheme(flavor, accent) -%}
 #####################
 # Catppuccin Colors #
@@ -280,7 +312,8 @@ dark-primary-color: var(--ha-color-primary-30)
 darker-primary-color: var(--ha-color-primary-20)
 light-primary-color: var(--ha-color-primary-50)
 accent-color: var(--primary-color)
-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+divider-color: var(--catppuccin-divider-color)
 outline-color: var(--catppuccin-crust)
 outline-hover-color: var(--catppuccin-surface2)
 
@@ -429,9 +462,35 @@ graph-color-13: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[ac
 graph-color-14: var(--catppuccin-{{ graph_colors | nth(n=(graph_color_offsets[accent] + 13) % 14) }})
 {% endmacro haTheme -%}
 
+{%- macro cardModTheme() -%}
+# Custom cards via card-mod
+card-mod-card-yaml: |
+  ".": |
+    {{ self::customCardStyles() | indent(prefix="    ") }}
+  "text-divider-row $": |
+    {{ self::textDividerStyles() | indent(prefix="    ") }}
+  "button-card $": |
+    ha-card.button-card-main {
+      border: none !important;
+    }
+  "bar-card $": |
+    :host {
+      --bar-card-border-radius: 12px;
+    }
+    ha-card {
+      border: none !important;
+    }
+card-mod-card-child: |
+  {{ self::customCardStyles() | indent(prefix="  ") }}
+card-mod-row: |
+  {{ self::customCardStyles() | indent(prefix="  ") }}
+{%- endmacro cardModTheme -%}
+
 {%- for _, flavor in flavors -%}
 Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
   {{ self::haTheme(flavor=flavor, accent=accent) | indent(prefix="  ") }}
+  {{ self::cardModTheme() | indent(prefix="  ") }}
+  card-mod-theme: Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}
 
   # Inform Home Assistant that this is a single-mode theme.
   modes:
@@ -443,6 +502,8 @@ Catppuccin {{ flavor.identifier | capitalize }}{% if not is_default %} {{ accent
 {%- for _, dark_flavor in flavors -%}
 {%- if dark_flavor.dark -%}
 Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}:
+  {{ self::cardModTheme() | indent(prefix="  ") }}
+  card-mod-theme: Catppuccin Auto {{ light_flavor.identifier | capitalize }} {{ dark_flavor.identifier | capitalize }}{% if not is_default %} {{ accent | capitalize }}{% endif %}
   modes:
     light:
       {{ self::haTheme(flavor=light_flavor, accent=accent) | indent(prefix="      ") }}

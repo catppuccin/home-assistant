@@ -314,7 +314,8 @@ Catppuccin Latte:
   darker-primary-color: var(--ha-color-primary-20)
   light-primary-color: var(--ha-color-primary-50)
   accent-color: var(--primary-color)
-  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  divider-color: var(--catppuccin-divider-color)
   outline-color: var(--catppuccin-crust)
   outline-hover-color: var(--catppuccin-surface2)
 
@@ -461,6 +462,110 @@ Catppuccin Latte:
   graph-color-12: var(--catppuccin-rosewater)
   graph-color-13: var(--catppuccin-sapphire)
   graph-color-14: var(--catppuccin-flamingo)
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Latte
 
   # Inform Home Assistant that this is a single-mode theme.
   modes:
@@ -781,7 +886,8 @@ Catppuccin Frappe:
   darker-primary-color: var(--ha-color-primary-20)
   light-primary-color: var(--ha-color-primary-50)
   accent-color: var(--primary-color)
-  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  divider-color: var(--catppuccin-divider-color)
   outline-color: var(--catppuccin-crust)
   outline-hover-color: var(--catppuccin-surface2)
 
@@ -928,6 +1034,110 @@ Catppuccin Frappe:
   graph-color-12: var(--catppuccin-rosewater)
   graph-color-13: var(--catppuccin-sapphire)
   graph-color-14: var(--catppuccin-flamingo)
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Frappe
 
   # Inform Home Assistant that this is a single-mode theme.
   modes:
@@ -1248,7 +1458,8 @@ Catppuccin Macchiato:
   darker-primary-color: var(--ha-color-primary-20)
   light-primary-color: var(--ha-color-primary-50)
   accent-color: var(--primary-color)
-  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  divider-color: var(--catppuccin-divider-color)
   outline-color: var(--catppuccin-crust)
   outline-hover-color: var(--catppuccin-surface2)
 
@@ -1395,6 +1606,110 @@ Catppuccin Macchiato:
   graph-color-12: var(--catppuccin-rosewater)
   graph-color-13: var(--catppuccin-sapphire)
   graph-color-14: var(--catppuccin-flamingo)
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Macchiato
 
   # Inform Home Assistant that this is a single-mode theme.
   modes:
@@ -1715,7 +2030,8 @@ Catppuccin Mocha:
   darker-primary-color: var(--ha-color-primary-20)
   light-primary-color: var(--ha-color-primary-50)
   accent-color: var(--primary-color)
-  divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+  divider-color: var(--catppuccin-divider-color)
   outline-color: var(--catppuccin-crust)
   outline-hover-color: var(--catppuccin-surface2)
 
@@ -1862,11 +2178,219 @@ Catppuccin Mocha:
   graph-color-12: var(--catppuccin-rosewater)
   graph-color-13: var(--catppuccin-sapphire)
   graph-color-14: var(--catppuccin-flamingo)
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Mocha
 
   # Inform Home Assistant that this is a single-mode theme.
   modes:
     dark: {}
 Catppuccin Auto Latte Frappe:
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Auto Latte Frappe
   modes:
     light:
       #####################
@@ -2184,7 +2708,8 @@ Catppuccin Auto Latte Frappe:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
@@ -2647,7 +3172,8 @@ Catppuccin Auto Latte Frappe:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
@@ -2795,6 +3321,110 @@ Catppuccin Auto Latte Frappe:
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
 Catppuccin Auto Latte Macchiato:
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Auto Latte Macchiato
   modes:
     light:
       #####################
@@ -3112,7 +3742,8 @@ Catppuccin Auto Latte Macchiato:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
@@ -3575,7 +4206,8 @@ Catppuccin Auto Latte Macchiato:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
@@ -3723,6 +4355,110 @@ Catppuccin Auto Latte Macchiato:
       graph-color-13: var(--catppuccin-sapphire)
       graph-color-14: var(--catppuccin-flamingo)
 Catppuccin Auto Latte Mocha:
+  # Custom cards via card-mod
+  card-mod-card-yaml: |
+    ".": |
+      :host(.type-custom-bar-card) {
+        --bar-card-border-radius: 12px;
+      }
+      :host(.type-custom-bar-card) ha-card,
+      :host(.type-custom-button-card) ha-card.button-card-main {
+        border: none !important;
+      }
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+      .mdc-data-table__header-cell,
+      .mdc-data-table__cell.group-header,
+      .group-header {
+        color: var(--primary-color) !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+      }
+    "text-divider-row $": |
+      .text-divider-container {
+        --divider-color: var(--catppuccin-divider-color);
+      }
+      .text-divider-center {
+        border-bottom-color: var(--catppuccin-divider-color) !important;
+      }
+      .text-divider-center span {
+        color: var(--icon-primary-color, var(--primary-color)) !important;
+        font-weight: 300 !important;
+        background: var(--ha-card-background, var(--card-background-color)) !important;
+      }
+    "button-card $": |
+      ha-card.button-card-main {
+        border: none !important;
+      }
+    "bar-card $": |
+      :host {
+        --bar-card-border-radius: 12px;
+      }
+      ha-card {
+        border: none !important;
+      }
+  card-mod-card-child: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-row: |
+    :host(.type-custom-bar-card) {
+      --bar-card-border-radius: 12px;
+    }
+    :host(.type-custom-bar-card) ha-card,
+    :host(.type-custom-button-card) ha-card.button-card-main {
+      border: none !important;
+    }
+    .text-divider-container {
+      --divider-color: var(--catppuccin-divider-color);
+    }
+    .text-divider-center {
+      border-bottom-color: var(--catppuccin-divider-color) !important;
+    }
+    .text-divider-center span {
+      color: var(--icon-primary-color, var(--primary-color)) !important;
+      font-weight: 300 !important;
+      background: var(--ha-card-background, var(--card-background-color)) !important;
+    }
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell.group-header,
+    .group-header {
+      color: var(--primary-color) !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  card-mod-theme: Catppuccin Auto Latte Mocha
   modes:
     light:
       #####################
@@ -4040,7 +4776,8 @@ Catppuccin Auto Latte Mocha:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
@@ -4503,7 +5240,8 @@ Catppuccin Auto Latte Mocha:
       darker-primary-color: var(--ha-color-primary-20)
       light-primary-color: var(--ha-color-primary-50)
       accent-color: var(--primary-color)
-      divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      catppuccin-divider-color: rgba(var(--catppuccin-overlay1-rgb), 0.15)
+      divider-color: var(--catppuccin-divider-color)
       outline-color: var(--catppuccin-crust)
       outline-hover-color: var(--catppuccin-surface2)
 
