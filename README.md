@@ -44,7 +44,6 @@
 <img src="assets/macchiato/settings.webp"/>
 <img src="assets/macchiato/profile.webp"/>
 </details>
-</details>
 <details>
 <summary>🌿 Mocha</summary>
 <img src="assets/mocha/dashboard.webp"/>
