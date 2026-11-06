@@ -11,7 +11,7 @@ body:
   - type: textarea
     attributes:
       label: Describe your issue.
-      description: Bugs such as missing highlights should be raised under a [Bug Report](https://github.com/catppuccin/jetbrains/issues/new?assignees=&labels=&template=bug.yml).
+      description: Bugs such as missing highlights should be raised under a [Bug Report](https://github.com/catppuccin/home-assistant/issues/new?assignees=&labels=&template=bug.yml).
       placeholder: The README is missing crucial information such as...
     validations:
       required: true
