@@ -59,7 +59,7 @@
 * style not applied to unchecked toggle button ([#27](https://github.com/catppuccin/home-assistant/issues/27)) ([6edce61](https://github.com/catppuccin/home-assistant/commit/6edce618f11b775b91f5a0764d8d83a1a8e2bbe2))
 * unchecked switch track colour not set ([#31](https://github.com/catppuccin/home-assistant/issues/31)) ([50d5c61](https://github.com/catppuccin/home-assistant/commit/50d5c610ed2ba12d7e01584af8f8d9effb9e2f70))
 
-## [1.0.2](https://github.com/catppuccin/lazygit/compare/v1.0.1...v1.0.2) (2024-03-23)
+## [1.0.2](https://github.com/catppuccin/home-assistant/compare/v1.0.1...v1.0.2) (2024-03-23)
 
 - fix appearance of disabled dropdowns
 - fix appearance of disabled input widgets
